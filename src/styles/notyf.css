@@ -1,0 +1,30 @@
+.notyf {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.notyf .notyf-info {
+    background-color: #333333;
+    color: white;
+}
+
+.notyf-container {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.notyf .notyf__message strong {
+    color: white;
+    background: #a9b1d6;
+    color: black;
+    padding: 2px 4px;
+}
+
+.notyf .notyf__message button {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
