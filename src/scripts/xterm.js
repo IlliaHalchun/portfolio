@@ -106,7 +106,7 @@ term.onData((char) => {
 // Registering event listeners
 
 Object.entries(COMMANDS).forEach(([name, options]) => {
-    if (options.shouldBeRegeristedAsEvent) {
+    if (options.shouldBeRegisteredAsEvent) {
         document.addEventListener(name, () => {
             term.clear();
             term.write(name);

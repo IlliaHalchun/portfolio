@@ -34,51 +34,51 @@ export const COMMANDS = {
     [HELP_COMMAND_NAME]: {
         description: HELP_COMMAND_DESCRIPTION,
         handler: helpCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [CLEAR_COMMAND_NAME]: {
         description: CLEAR_COMMAND_DESCRIPTION,
         handler: clearCommandHandler,
-        shouldBeRegeristedAsEvent: false
+        shouldBeRegisteredAsEvent: false
     },
     [WELCOME_COMMAND_NAME]: {
         description: WELCOME_COMMAND_DESCRIPTION,
         handler: welcomeCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [ILLIASAY_COMMAND_NAME]: {
         description: ILLIASAY_COMMAND_DESCRIPTION,
         handler: illiasayCommandHandler,
-        shouldBeRegeristedAsEvent: false
+        shouldBeRegisteredAsEvent: false
     },
     [CONTACT_COMMAND_NAME]: {
         description: CONTACT_COMMAND_DESCRIPTION,
         handler: contactCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [ABOUT_COMMAND_NAME]: {
         description: ABOUT_COMMAND_DESCRIPTION,
         handler: aboutCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [SKILLS_COMMAND_NAME]: {
         description: SKILLS_COMMAND_DESCRIPTION,
         handler: skillsCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [EXPERIENCE_COMMAND_NAME]: {
         description: EXPERIENCE_COMMAND_DESCRIPTION,
         handler: experienceCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [EDUCATION_COMMAND_NAME]: {
         description: EDUCATION_COMMAND_DESCRIPTION,
         handler: educationCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
     [PROJECTS_COMMAND_NAME]: {
         description: PROJECTS_COMMAND_DESCRIPTION,
         handler: projectsCommandHandler,
-        shouldBeRegeristedAsEvent: true
+        shouldBeRegisteredAsEvent: true
     },
 };
