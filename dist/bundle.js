@@ -434,27 +434,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.notyf {
     color: white;
 }
 
-.notyf-container {
-    top: 20px;
-    left: 20px;
-    position: absolute;
-}
-
-.notyf .notyf__message strong {
-    color: white;
+.notyf .notyf__message button {
     background: #a9b1d6;
     color: black;
-    padding: 2px 4px;
-}
-
-.notyf .notyf__message button {
     cursor: pointer;
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/notyf.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,eAAe;AACnB;;AAEA;IACI,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,SAAS;IACT,UAAU;IACV,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,SAAS;IACT,UAAU;IACV,YAAY;IACZ,aAAa;AACjB","sourcesContent":[".notyf {\n    font-family: monospace;\n    font-size: 14px;\n}\n\n.notyf .notyf-info {\n    background-color: #333333;\n    color: white;\n}\n\n.notyf-container {\n    top: 20px;\n    left: 20px;\n    position: absolute;\n}\n\n.notyf .notyf__message strong {\n    color: white;\n    background: #a9b1d6;\n    color: black;\n    padding: 2px 4px;\n}\n\n.notyf .notyf__message button {\n    cursor: pointer;\n    margin: 0;\n    padding: 0;\n    border: none;\n    outline: none;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/notyf.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,eAAe;AACnB;;AAEA;IACI,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,mBAAmB;IACnB,YAAY;IACZ,eAAe;IACf,SAAS;IACT,UAAU;IACV,YAAY;IACZ,aAAa;AACjB","sourcesContent":[".notyf {\n    font-family: monospace;\n    font-size: 14px;\n}\n\n.notyf .notyf-info {\n    background-color: #333333;\n    color: white;\n}\n\n.notyf .notyf__message button {\n    background: #a9b1d6;\n    color: black;\n    cursor: pointer;\n    margin: 0;\n    padding: 0;\n    border: none;\n    outline: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1552,147 +1541,96 @@ const stringIndexToBufferPosition = (terminal, lineIndex, stringIndex, reportLas
 
 /***/ }),
 
-/***/ "./src/commands/about.command.js":
-/*!***************************************!*\
-  !*** ./src/commands/about.command.js ***!
-  \***************************************/
+/***/ "./src/commands/about.command-handler.js":
+/*!***********************************************!*\
+  !*** ./src/commands/about.command-handler.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ABOUT_COMMAND_DESCRIPTION: () => (/* binding */ ABOUT_COMMAND_DESCRIPTION),
-/* harmony export */   ABOUT_COMMAND_NAME: () => (/* binding */ ABOUT_COMMAND_NAME),
 /* harmony export */   aboutCommandHandler: () => (/* binding */ aboutCommandHandler)
 /* harmony export */ });
-var ABOUT_COMMAND_NAME = 'about';
-var ABOUT_COMMAND_DESCRIPTION = 'Displays information about me';
-var ABOUT_MESSAGE = "\x1B[1;33mAbout Me\x1B[1;36m\n\n\x1B[1;34mExperienced Full Stack Developer with over 4 years of success in developing complex projects across diverse industries.\x1B[0m\n\n\x1B[1;33mWhat I Do:\x1B[0m\n\nI specialize in architecting end-to-end solutions that:\n\n\x1B[1;32m\u2022 Enhance efficiency\n\u2022 Streamline operations\n\u2022 Deliver impactful results\x1B[0m\n\n\x1B[1;33mTechnical Expertise:\x1B[0m\n\n\x1B[1;32m\u2022 Next.js, Nest.js, Node.js\n\u2022 TypeScript, JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;33mBeyond Coding:\x1B[0m\n\nPassionate about mentoring, terminal customization, and DevOps practices. Skilled in agile methodologies, best practices, and delivering scalable, user-focused solutions.\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var ABOUT_MESSAGE = "\x1B[1;33mAbout Me\x1B[1;36m\n\n\x1B[1;34mExperienced Full Stack Developer with over 4 years of success in developing complex projects across diverse industries.\x1B[0m\n\n\x1B[1;33mWhat I Do:\x1B[0m\n\nI specialize in architecting end-to-end solutions that:\n\n\x1B[1;32m\u2022 Enhance efficiency\n\u2022 Streamline operations\n\u2022 Deliver impactful results\x1B[0m\n\n\x1B[1;33mTechnical Expertise:\x1B[0m\n\n\x1B[1;32m\u2022 Next.js, Nest.js, Node.js\n\u2022 TypeScript, JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;33mBeyond Coding:\x1B[0m\n\nPassionate about mentoring, terminal customization, and DevOps practices. Skilled in agile methodologies, best practices, and delivering scalable, user-focused solutions.\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var aboutCommandHandler = function aboutCommandHandler(term) {
   term.write(ABOUT_MESSAGE);
 };
 
 /***/ }),
 
-/***/ "./src/commands/clear.command.js":
-/*!***************************************!*\
-  !*** ./src/commands/clear.command.js ***!
-  \***************************************/
+/***/ "./src/commands/clear.command-handler.js":
+/*!***********************************************!*\
+  !*** ./src/commands/clear.command-handler.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CLEAR_COMMAND_DESCRIPTION: () => (/* binding */ CLEAR_COMMAND_DESCRIPTION),
-/* harmony export */   CLEAR_COMMAND_NAME: () => (/* binding */ CLEAR_COMMAND_NAME),
 /* harmony export */   clearCommandHandler: () => (/* binding */ clearCommandHandler)
 /* harmony export */ });
-/* harmony import */ var _scripts_notyf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scripts/notyf */ "./src/scripts/notyf.js");
+/* harmony import */ var _tooltips_clear_tooltip__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../tooltips/clear.tooltip */ "./src/tooltips/clear.tooltip.js");
 
-var CLEAR_COMMAND_NAME = 'clear';
-var CLEAR_COMMAND_DESCRIPTION = 'Clears terminal';
 var clearCommandHandler = function clearCommandHandler(term) {
-  // Since write() is async, clear() should be planned on the next event loop invocation
   setTimeout(function () {
     return term.clear();
   }, 0);
-  (0,_scripts_notyf__WEBPACK_IMPORTED_MODULE_0__.showClearToast)();
+  (0,_tooltips_clear_tooltip__WEBPACK_IMPORTED_MODULE_0__.showClearToast)();
 };
 
 /***/ }),
 
-/***/ "./src/commands/contact.command.js":
-/*!*****************************************!*\
-  !*** ./src/commands/contact.command.js ***!
-  \*****************************************/
+/***/ "./src/commands/commands.descriptions.js":
+/*!***********************************************!*\
+  !*** ./src/commands/commands.descriptions.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ABOUT_COMMAND_DESCRIPTION: () => (/* binding */ ABOUT_COMMAND_DESCRIPTION),
+/* harmony export */   CLEAR_COMMAND_DESCRIPTION: () => (/* binding */ CLEAR_COMMAND_DESCRIPTION),
 /* harmony export */   CONTACT_COMMAND_DESCRIPTION: () => (/* binding */ CONTACT_COMMAND_DESCRIPTION),
-/* harmony export */   CONTACT_COMMAND_NAME: () => (/* binding */ CONTACT_COMMAND_NAME),
-/* harmony export */   contactCommandHandler: () => (/* binding */ contactCommandHandler)
-/* harmony export */ });
-var CONTACT_MESSAGE = "\x1B[1;33mContact Me\x1B[1;36m\n\n\x1B[1;34mThank you for visiting my interactive portfolio!\x1B[0m\n\x1B[1;33mFeel free to reach out to me via the following methods:\x1B[0m\n\n\x1B[1;32mEmail:\x1B[0m \x1B[1;37mgsv19782000@gmail.com\x1B[0m\n\x1B[1;32mPhone:\x1B[0m \x1B[1;37m+48574949097\x1B[0m\n\x1B[1;32mGitHub:\x1B[0m \x1B[1;37mhttps://github.com/illiahalchun\x1B[0m\n\x1B[1;32mLinkedIn:\x1B[0m \x1B[1;37mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1B[0m\n\n\x1B[1;33mLooking forward to connecting with you!\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
-var CONTACT_COMMAND_NAME = 'contact';
-var CONTACT_COMMAND_DESCRIPTION = 'Displays contact information.';
-var contactCommandHandler = function contactCommandHandler(term) {
-  term.write(CONTACT_MESSAGE);
-};
-
-/***/ }),
-
-/***/ "./src/commands/demo.command.js":
-/*!**************************************!*\
-  !*** ./src/commands/demo.command.js ***!
-  \**************************************/
-/***/ (() => {
-
-// !TODO: Implement
-
-/***/ }),
-
-/***/ "./src/commands/education.command.js":
-/*!*******************************************!*\
-  !*** ./src/commands/education.command.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   EDUCATION_COMMAND_DESCRIPTION: () => (/* binding */ EDUCATION_COMMAND_DESCRIPTION),
-/* harmony export */   EDUCATION_COMMAND_NAME: () => (/* binding */ EDUCATION_COMMAND_NAME),
-/* harmony export */   educationCommandHandler: () => (/* binding */ educationCommandHandler)
-/* harmony export */ });
-var EDUCATION_COMMAND_NAME = 'education';
-var EDUCATION_COMMAND_DESCRIPTION = 'Displays education background';
-var EDUCATION_MESSAGE = "\x1B[1;33mEducation\x1B[0m\n\n\x1B[1;36mInstitution:\x1B[0m Open Source Society University\n\x1B[1;36mDegree:\x1B[0m Computer Science\n\x1B[1;36mYears:\x1B[0m 2018 - 2022\n\n\x1B[1;34mThis program followed a structured curriculum inspired by top universities, covering core computer science principles, software development, and problem-solving skills.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
-var educationCommandHandler = function educationCommandHandler(term) {
-  term.write(EDUCATION_MESSAGE);
-};
-
-/***/ }),
-
-/***/ "./src/commands/experience.command.js":
-/*!********************************************!*\
-  !*** ./src/commands/experience.command.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   EXPERIENCE_COMMAND_DESCRIPTION: () => (/* binding */ EXPERIENCE_COMMAND_DESCRIPTION),
-/* harmony export */   EXPERIENCE_COMMAND_NAME: () => (/* binding */ EXPERIENCE_COMMAND_NAME),
-/* harmony export */   experienceCommandHandler: () => (/* binding */ experienceCommandHandler)
+/* harmony export */   HELP_COMMAND_DESCRIPTION: () => (/* binding */ HELP_COMMAND_DESCRIPTION),
+/* harmony export */   ILLIASAY_COMMAND_DESCRIPTION: () => (/* binding */ ILLIASAY_COMMAND_DESCRIPTION),
+/* harmony export */   PROJECTS_COMMAND_DESCRIPTION: () => (/* binding */ PROJECTS_COMMAND_DESCRIPTION),
+/* harmony export */   SKILLS_COMMAND_DESCRIPTION: () => (/* binding */ SKILLS_COMMAND_DESCRIPTION),
+/* harmony export */   WELCOME_COMMAND_DESCRIPTION: () => (/* binding */ WELCOME_COMMAND_DESCRIPTION)
 /* harmony export */ });
-var EXPERIENCE_COMMAND_NAME = 'experience';
+var ABOUT_COMMAND_DESCRIPTION = 'Displays information about me';
+var CLEAR_COMMAND_DESCRIPTION = 'Clears terminal';
+var CONTACT_COMMAND_DESCRIPTION = 'Displays contact information';
+var EDUCATION_COMMAND_DESCRIPTION = 'Displays education background';
 var EXPERIENCE_COMMAND_DESCRIPTION = 'Displays my work experience';
-var EXPERIENCE_MESSAGE = "\x1B[1;33mProfessional Experience\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDD39 RavenDB | Internal System | CRM Systems\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Mar 2023 - Present\x1B[0m\n\x1B[1;37mAs a Full Stack Developer, I contributed to designing and implementing an internal sales system with CRM-like features, streamlining operations and enhancing user experiences.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Implemented CRM features like customer tracking and lead management, improving efficiency by 7%.\n\u2714 Optimized database queries, reducing sales report processing time by 15%.\n\u2714 Contributed to agile development cycles, delivering high-quality updates on strict timelines.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 MafiaHub | Social Web\x1B[0m\n\x1B[1;32mPosition: CEO & Sole Developer | May 2022 - Present\x1B[0m\n\x1B[1;37mDeveloping a web application that digitizes the Mafia tabletop game, providing game history tracking, turn recording, and detailed player statistics.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Built a CI/CD pipeline for automated builds, testing, and deployment.\n\u2714 Implemented core game mechanics, including game setup, turn tracking, and data storage.\n\u2714 Created containerized development environments for seamless builds.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Food Delivery App | Food & Beverage\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Feb 2021 - Feb 2023\x1B[0m\n\x1B[1;37mDeveloped a comprehensive food delivery application to enhance interactions between users, restaurants, and delivery partners.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Designed a modular backend with Nest.js for scalable feature development.\n\u2714 Implemented server-side rendering (SSR) with Next.js for improved SEO and performance.\n\u2714 Built real-time order status updates and delivery tracking for better user engagement.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Internship | E-commerce\x1B[0m\n\x1B[1;32mPosition: Intern | Jun 2020 - Feb 2021\x1B[0m\n\x1B[1;37mGained hands-on experience in e-commerce solutions and full-stack development practices.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to explore available commands.";
-var experienceCommandHandler = function experienceCommandHandler(term) {
-  term.write(EXPERIENCE_MESSAGE);
-};
+var HELP_COMMAND_DESCRIPTION = 'Displays help message';
+var ILLIASAY_COMMAND_DESCRIPTION = 'Displays an ASCII portrait of me with a speech bubble.';
+var PROJECTS_COMMAND_DESCRIPTION = 'Displays my featured projects';
+var SKILLS_COMMAND_DESCRIPTION = 'Displays my technical skills';
+var WELCOME_COMMAND_DESCRIPTION = 'Displays welcome message';
 
 /***/ }),
 
-/***/ "./src/commands/handler.js":
-/*!*********************************!*\
-  !*** ./src/commands/handler.js ***!
-  \*********************************/
+/***/ "./src/commands/commands.dispatcher.js":
+/*!*********************************************!*\
+  !*** ./src/commands/commands.dispatcher.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleCommand: () => (/* binding */ handleCommand)
+/* harmony export */   dispatchCommand: () => (/* binding */ dispatchCommand)
 /* harmony export */ });
-/* harmony import */ var _utils_cursor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/cursor */ "./src/utils/cursor.js");
-/* harmony import */ var _clear_command__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clear.command */ "./src/commands/clear.command.js");
-/* harmony import */ var _demo_command__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./demo.command */ "./src/commands/demo.command.js");
-/* harmony import */ var _demo_command__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_demo_command__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list */ "./src/commands/list.js");
+/* harmony import */ var _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/cursor.utils */ "./src/utils/cursor.utils.js");
+/* harmony import */ var _commands_handlers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands.handlers */ "./src/commands/commands.handlers.js");
+/* harmony import */ var _commands_names__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commands.names */ "./src/commands/commands.names.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
 function _toArray(r) { return _arrayWithHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -1703,7 +1641,9 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-var handleCommand = function handleCommand(term, prompt) {
+
+
+var dispatchCommand = function dispatchCommand(term, prompt) {
   var _prompt$trim$split = prompt.trim().split(' '),
     _prompt$trim$split2 = _toArray(_prompt$trim$split),
     command = _prompt$trim$split2[0],
@@ -1711,55 +1651,179 @@ var handleCommand = function handleCommand(term, prompt) {
   if (!command) return;
   term.writeln('');
   term.writeln('');
-  if (command in _list__WEBPACK_IMPORTED_MODULE_3__.COMMANDS) {
-    var handler = _list__WEBPACK_IMPORTED_MODULE_3__.COMMANDS[command].handler;
-    handler(term, parameters.join(' '));
+  if (command in _commands_handlers__WEBPACK_IMPORTED_MODULE_1__.COMMAND_HANDLERS) {
+    (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_4__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_5__.CLOSE_ALL_TOASTS_EVENT_NAME]);
+    _commands_handlers__WEBPACK_IMPORTED_MODULE_1__.COMMAND_HANDLERS[command](term, parameters.join(' '));
   } else {
     term.write("".concat(command, ": command not found"));
   }
-  if (command == _clear_command__WEBPACK_IMPORTED_MODULE_1__.CLEAR_COMMAND_NAME) {
-    (0,_utils_cursor__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
+  if (command === _commands_names__WEBPACK_IMPORTED_MODULE_2__.CLEAR_COMMAND_NAME) {
+    (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
     return;
   }
   term.writeln('');
-  (0,_utils_cursor__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
+  (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
 };
 
 /***/ }),
 
-/***/ "./src/commands/help.command.js":
-/*!**************************************!*\
-  !*** ./src/commands/help.command.js ***!
-  \**************************************/
+/***/ "./src/commands/commands.handlers.js":
+/*!*******************************************!*\
+  !*** ./src/commands/commands.handlers.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   HELP_COMMAND_DESCRIPTION: () => (/* binding */ HELP_COMMAND_DESCRIPTION),
+/* harmony export */   COMMAND_HANDLERS: () => (/* binding */ COMMAND_HANDLERS)
+/* harmony export */ });
+/* harmony import */ var _commands_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands.names */ "./src/commands/commands.names.js");
+/* harmony import */ var _projects_command_handler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects.command-handler */ "./src/commands/projects.command-handler.js");
+/* harmony import */ var _education_command_handler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./education.command-handler */ "./src/commands/education.command-handler.js");
+/* harmony import */ var _experience_command_handler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./experience.command-handler */ "./src/commands/experience.command-handler.js");
+/* harmony import */ var _skills_command_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./skills.command-handler */ "./src/commands/skills.command-handler.js");
+/* harmony import */ var _about_command_handler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./about.command-handler */ "./src/commands/about.command-handler.js");
+/* harmony import */ var _contact_command_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact.command-handler */ "./src/commands/contact.command-handler.js");
+/* harmony import */ var _illiasay_command_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./illiasay.command-handler */ "./src/commands/illiasay.command-handler.js");
+/* harmony import */ var _welcome_command_handler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./welcome.command-handler */ "./src/commands/welcome.command-handler.js");
+/* harmony import */ var _clear_command_handler__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./clear.command-handler */ "./src/commands/clear.command-handler.js");
+/* harmony import */ var _help_command_handler__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./help.command-handler */ "./src/commands/help.command-handler.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+
+
+
+
+
+
+
+var COMMAND_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _commands_names__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_NAME, _help_command_handler__WEBPACK_IMPORTED_MODULE_10__.helpCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_NAME, _clear_command_handler__WEBPACK_IMPORTED_MODULE_9__.clearCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_NAME, _welcome_command_handler__WEBPACK_IMPORTED_MODULE_8__.welcomeCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ILLIASAY_COMMAND_NAME, _illiasay_command_handler__WEBPACK_IMPORTED_MODULE_7__.illiasayCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_NAME, _contact_command_handler__WEBPACK_IMPORTED_MODULE_6__.contactCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_NAME, _about_command_handler__WEBPACK_IMPORTED_MODULE_5__.aboutCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_NAME, _skills_command_handler__WEBPACK_IMPORTED_MODULE_4__.skillsCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_NAME, _experience_command_handler__WEBPACK_IMPORTED_MODULE_3__.experienceCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_NAME, _education_command_handler__WEBPACK_IMPORTED_MODULE_2__.educationCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_NAME, _projects_command_handler__WEBPACK_IMPORTED_MODULE_1__.projectsCommandHandler);
+
+/***/ }),
+
+/***/ "./src/commands/commands.names.js":
+/*!****************************************!*\
+  !*** ./src/commands/commands.names.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ABOUT_COMMAND_NAME: () => (/* binding */ ABOUT_COMMAND_NAME),
+/* harmony export */   CLEAR_COMMAND_NAME: () => (/* binding */ CLEAR_COMMAND_NAME),
+/* harmony export */   CONTACT_COMMAND_NAME: () => (/* binding */ CONTACT_COMMAND_NAME),
+/* harmony export */   EDUCATION_COMMAND_NAME: () => (/* binding */ EDUCATION_COMMAND_NAME),
+/* harmony export */   EXPERIENCE_COMMAND_NAME: () => (/* binding */ EXPERIENCE_COMMAND_NAME),
 /* harmony export */   HELP_COMMAND_NAME: () => (/* binding */ HELP_COMMAND_NAME),
+/* harmony export */   ILLIASAY_COMMAND_NAME: () => (/* binding */ ILLIASAY_COMMAND_NAME),
+/* harmony export */   PROJECTS_COMMAND_NAME: () => (/* binding */ PROJECTS_COMMAND_NAME),
+/* harmony export */   SKILLS_COMMAND_NAME: () => (/* binding */ SKILLS_COMMAND_NAME),
+/* harmony export */   WELCOME_COMMAND_NAME: () => (/* binding */ WELCOME_COMMAND_NAME)
+/* harmony export */ });
+var ABOUT_COMMAND_NAME = 'about';
+var CLEAR_COMMAND_NAME = 'clear';
+var CONTACT_COMMAND_NAME = 'contact';
+var EDUCATION_COMMAND_NAME = 'education';
+var EXPERIENCE_COMMAND_NAME = 'experience';
+var HELP_COMMAND_NAME = 'help';
+var ILLIASAY_COMMAND_NAME = 'illiasay';
+var PROJECTS_COMMAND_NAME = 'projects';
+var SKILLS_COMMAND_NAME = 'skills';
+var WELCOME_COMMAND_NAME = 'welcome';
+
+/***/ }),
+
+/***/ "./src/commands/contact.command-handler.js":
+/*!*************************************************!*\
+  !*** ./src/commands/contact.command-handler.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   contactCommandHandler: () => (/* binding */ contactCommandHandler)
+/* harmony export */ });
+var CONTACT_MESSAGE = "\x1B[1;33mContact Me\x1B[1;36m\n\n\x1B[1;34mThank you for visiting my interactive portfolio!\x1B[0m\n\x1B[1;33mFeel free to reach out to me via the following methods:\x1B[0m\n\n\x1B[1;32mEmail:\x1B[0m \x1B[1;37mgsv19782000@gmail.com\x1B[0m\n\x1B[1;32mPhone:\x1B[0m \x1B[1;37m+48574949097\x1B[0m\n\x1B[1;32mGitHub:\x1B[0m \x1B[1;37mhttps://github.com/illiahalchun\x1B[0m\n\x1B[1;32mLinkedIn:\x1B[0m \x1B[1;37mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1B[0m\n\n\x1B[1;33mLooking forward to connecting with you!\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var contactCommandHandler = function contactCommandHandler(term) {
+  term.write(CONTACT_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/commands/education.command-handler.js":
+/*!***************************************************!*\
+  !*** ./src/commands/education.command-handler.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   educationCommandHandler: () => (/* binding */ educationCommandHandler)
+/* harmony export */ });
+var EDUCATION_MESSAGE = "\x1B[1;33mEducation\x1B[0m\n\n\x1B[1;36mInstitution:\x1B[0m Open Source Society University\n\x1B[1;36mDegree:\x1B[0m Computer Science\n\x1B[1;36mYears:\x1B[0m 2018 - 2022\n\n\x1B[1;34mThis program followed a structured curriculum inspired by top universities, covering core computer science principles, software development, and problem-solving skills.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var educationCommandHandler = function educationCommandHandler(term) {
+  term.write(EDUCATION_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/commands/experience.command-handler.js":
+/*!****************************************************!*\
+  !*** ./src/commands/experience.command-handler.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   experienceCommandHandler: () => (/* binding */ experienceCommandHandler)
+/* harmony export */ });
+var EXPERIENCE_MESSAGE = "\x1B[1;33mProfessional Experience\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDD39 RavenDB | Internal System | CRM Systems\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Mar 2023 - Present\x1B[0m\n\x1B[1;37mAs a Full Stack Developer, I contributed to designing and implementing an internal sales system with CRM-like features, streamlining operations and enhancing user experiences.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Implemented CRM features like customer tracking and lead management, improving efficiency by 7%.\n\u2714 Optimized database queries, reducing sales report processing time by 15%.\n\u2714 Contributed to agile development cycles, delivering high-quality updates on strict timelines.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 MafiaHub | Social Web\x1B[0m\n\x1B[1;32mPosition: CEO & Sole Developer | May 2022 - Present\x1B[0m\n\x1B[1;37mDeveloping a web application that digitizes the Mafia tabletop game, providing game history tracking, turn recording, and detailed player statistics.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Built a CI/CD pipeline for automated builds, testing, and deployment.\n\u2714 Implemented core game mechanics, including game setup, turn tracking, and data storage.\n\u2714 Created containerized development environments for seamless builds.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Food Delivery App | Food & Beverage\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Feb 2021 - Feb 2023\x1B[0m\n\x1B[1;37mDeveloped a comprehensive food delivery application to enhance interactions between users, restaurants, and delivery partners.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Designed a modular backend with Nest.js for scalable feature development.\n\u2714 Implemented server-side rendering (SSR) with Next.js for improved SEO and performance.\n\u2714 Built real-time order status updates and delivery tracking for better user engagement.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Internship | E-commerce\x1B[0m\n\x1B[1;32mPosition: Intern | Jun 2020 - Feb 2021\x1B[0m\n\x1B[1;37mGained hands-on experience in e-commerce solutions and full-stack development practices.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to explore available commands.";
+var experienceCommandHandler = function experienceCommandHandler(term) {
+  term.write(EXPERIENCE_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/commands/help.command-handler.js":
+/*!**********************************************!*\
+  !*** ./src/commands/help.command-handler.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   helpCommandHandler: () => (/* binding */ helpCommandHandler)
 /* harmony export */ });
-var HELP_MESSAGE = "\x1B[1;33mHelp Menu\x1B[1;36m\n\n\x1B[1;34mNeed assistance? Here\u2019s a list of available commands to navigate this terminal portfolio.\x1B[0m\n\n\x1B[1;32m\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[welcome]\x1B[0m    - Show welcome message\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0mclear\x1B[0m        - Clear the terminal screen\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m       - Display this help menu\n\n\x1B[1;32m\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[projects]\x1B[0m   - View my projects\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[about]\x1B[0m      - Learn about me\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[skills]\x1B[0m     - See my technical skills\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[experience]\x1B[0m - View my work experience\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[education]\x1B[0m  - See my academic background\x1B[0m\n\n\x1B[1;32m\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[contact]\x1B[0m    - Get my contact details\n\n\x1B[1;34mType or click a command to begin exploring. If you need further assistance, feel free to reach out using the 'contact' command!\x1B[0m";
-var HELP_COMMAND_NAME = 'help';
-var HELP_COMMAND_DESCRIPTION = 'Prints help message';
+/* harmony import */ var _commands_descriptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands.descriptions */ "./src/commands/commands.descriptions.js");
+
+var HELP_MESSAGE = "\x1B[1;33mHelp Menu\x1B[1;36m\n\n\x1B[1;34mHere\u2019s a list of available commands to navigate this terminal portfolio.\x1B[0m\n\n\x1B[1;32m\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[welcome]\x1B[0m    - ".concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_DESCRIPTION, "\n\nclear        - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m       - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_DESCRIPTION, "\n\n\x1B[1;32m\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[projects]\x1B[0m   - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[about]\x1B[0m      - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[skills]\x1B[0m     - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[experience]\x1B[0m - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[education]\x1B[0m  - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_DESCRIPTION, "\x1B[0m\n\n\x1B[1;32m\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[contact]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_DESCRIPTION, "\n\n\x1B[1;34mType or click a command to begin exploring.\x1B[0m");
 var helpCommandHandler = function helpCommandHandler(term) {
   term.write(HELP_MESSAGE);
 };
 
 /***/ }),
 
-/***/ "./src/commands/illiasay.command.js":
-/*!******************************************!*\
-  !*** ./src/commands/illiasay.command.js ***!
-  \******************************************/
+/***/ "./src/commands/illiasay.command-handler.js":
+/*!**************************************************!*\
+  !*** ./src/commands/illiasay.command-handler.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ILLIASAY_COMMAND_DESCRIPTION: () => (/* binding */ ILLIASAY_COMMAND_DESCRIPTION),
-/* harmony export */   ILLIASAY_COMMAND_NAME: () => (/* binding */ ILLIASAY_COMMAND_NAME),
 /* harmony export */   illiasayCommandHandler: () => (/* binding */ illiasayCommandHandler)
 /* harmony export */ });
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
@@ -1797,8 +1861,6 @@ var buildSpeechBubble = function buildSpeechBubble(message) {
   }).join('\n');
   return "\n".concat(topBottom, "\n").concat(middle, "\n").concat(topBottom);
 };
-var ILLIASAY_COMMAND_NAME = 'illiasay';
-var ILLIASAY_COMMAND_DESCRIPTION = 'Displays an ASCII portrait of me with a speech bubble.';
 var illiasayCommandHandler = function illiasayCommandHandler(term, message) {
   if (message.trim().length === 0) {
     term.write('Please specify illiasay message');
@@ -1811,29 +1873,120 @@ var illiasayCommandHandler = function illiasayCommandHandler(term, message) {
 
 /***/ }),
 
-/***/ "./src/commands/list.js":
-/*!******************************!*\
-  !*** ./src/commands/list.js ***!
-  \******************************/
+/***/ "./src/commands/projects.command-handler.js":
+/*!**************************************************!*\
+  !*** ./src/commands/projects.command-handler.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   COMMANDS: () => (/* binding */ COMMANDS)
+/* harmony export */   projectsCommandHandler: () => (/* binding */ projectsCommandHandler)
 /* harmony export */ });
-/* harmony import */ var _about_command__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.command */ "./src/commands/about.command.js");
-/* harmony import */ var _clear_command__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clear.command */ "./src/commands/clear.command.js");
-/* harmony import */ var _contact_command__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.command */ "./src/commands/contact.command.js");
-/* harmony import */ var _demo_command__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./demo.command */ "./src/commands/demo.command.js");
-/* harmony import */ var _demo_command__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_demo_command__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _education_command__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./education.command */ "./src/commands/education.command.js");
-/* harmony import */ var _experience_command__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./experience.command */ "./src/commands/experience.command.js");
-/* harmony import */ var _help_command__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help.command */ "./src/commands/help.command.js");
-/* harmony import */ var _illiasay_command__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./illiasay.command */ "./src/commands/illiasay.command.js");
-/* harmony import */ var _projects_command__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./projects.command */ "./src/commands/projects.command.js");
-/* harmony import */ var _skills_command__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./skills.command */ "./src/commands/skills.command.js");
-/* harmony import */ var _welcome_command__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./welcome.command */ "./src/commands/welcome.command.js");
+var PROJECTS_MESSAGE = "\x1B[1;33mProjects Showcase\x1B[0m\n\n\x1B[1;34m1. Tarcza dla Ukrainy\x1B[0m - \x1B[1;36mhttps://tarczadlaukrainy.pl\x1B[0m\n   \x1B[1;32mSocial Help Project\x1B[0m - Supports Ukrainian soldiers and civilians affected by war.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n\x1B[1;34m2. Artist Portfolio\x1B[0m - \x1B[1;36mhttps://anastasiia-tereshchenko.art\x1B[0m\n   \x1B[1;32mCustom Admin & Art Showcase\x1B[0m - A digital portfolio for an artist to showcase and manage paintings.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var projectsCommandHandler = function projectsCommandHandler(term) {
+  term.write(PROJECTS_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/commands/skills.command-handler.js":
+/*!************************************************!*\
+  !*** ./src/commands/skills.command-handler.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   skillsCommandHandler: () => (/* binding */ skillsCommandHandler)
+/* harmony export */ });
+var SKILLS_MESSAGE = "\x1B[1;33mTechnical Skills\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDE80  Frontend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: JavaScript, TypeScript, Rust/WASM\n\u2022 React Stack: React, Next.js, Redux, Zustand, Jest, React Testing Library, Storybook\n\u2022 Layout: HTML, CSS, Gulp, SASS, LESS, SCCS, Tailwind\x1B[0m\n\n\x1B[1;34m\uD83D\uDDA5\uFE0F  Backend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: Node.js, C#, Rust\n\u2022 Frameworks: Express.js, Nest.js, .NET, Gotham, Serverless Framework\n\u2022 APIs: REST, GraphQL, gRPC\n\u2022 Databases: MongoDB, PostgreSQL, RavenDB\x1B[0m\n\n\x1B[1;34m\uD83D\uDEE0\uFE0F  DevOps & Infrastructure\x1B[0m\n\n\x1B[1;32m\u2022 Docker, Nginx, Apache, RabbitMQ, Redis, CI/CD\n\u2022 Swagger, Postman, AWS, Terraform, Ansible\x1B[0m\n\n\x1B[1;34m\uD83D\uDCC2  Project Management & Tools\x1B[0m\n\n\x1B[1;32m\u2022 Git, GitHub, Bitbucket\n\u2022 Jira, Confluence, Trello, Slack, ClickUp\n\u2022 Agile Methodologies: SCRUM, Kanban\x1B[0m\n\n\x1B[1;34m\uD83D\uDCDA  Software Architecture & Best Practices\x1B[0m\n\n\x1B[1;32m\u2022 Web/Design Patterns, System Design\n\u2022 SOLID, KISS, DRY, Microservices Architecture\x1B[0m\n\n\x1B[1;34m\uD83C\uDFA8  Others\x1B[0m\n\n\x1B[1;32m\u2022 Figma, DrawIO, Strapi\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var skillsCommandHandler = function skillsCommandHandler(term) {
+  term.write(SKILLS_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/commands/welcome.command-handler.js":
+/*!*************************************************!*\
+  !*** ./src/commands/welcome.command-handler.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   welcomeCommandHandler: () => (/* binding */ welcomeCommandHandler)
+/* harmony export */ });
+var WELCOME_MESSAGE = "\x1B[1;33mWelcome to my interactive terminal portfolio!\x1B[1;36m\n\n\x1B[1;34mThis is a unique space where you can explore my work, experience, and skills through a terminal interface.\x1B[0m\n\n\x1B[1;33mAbout Me:\x1B[0m\n\nI am Illia Halchun, a full-stack software developer with expertise in modern web technologies.\nI specialize in building high-performance applications using:\n\n\x1B[1;32m\u2022 Next.js, Nest.js and Node.js\n\u2022 TypeScript and JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;34mEnjoy your stay and have fun exploring my work!\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands and start exploring.";
+var welcomeCommandHandler = function welcomeCommandHandler(term) {
+  term.write(WELCOME_MESSAGE);
+};
+
+/***/ }),
+
+/***/ "./src/events/close-all-toasts.event-handler.js":
+/*!******************************************************!*\
+  !*** ./src/events/close-all-toasts.event-handler.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   closeAllToastsEventHandler: () => (/* binding */ closeAllToastsEventHandler)
+/* harmony export */ });
+var closeAllToastsEventHandler = function closeAllToastsEventHandler(notyf) {
+  notyf.dismissAll();
+};
+
+/***/ }),
+
+/***/ "./src/events/event.dispatcher.js":
+/*!****************************************!*\
+  !*** ./src/events/event.dispatcher.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   dispatchEvent: () => (/* binding */ dispatchEvent)
+/* harmony export */ });
+var dispatchEvent = function dispatchEvent(event) {
+  return document.dispatchEvent(event);
+};
+
+/***/ }),
+
+/***/ "./src/events/events.handlers.js":
+/*!***************************************!*\
+  !*** ./src/events/events.handlers.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   EVENT_HANDLERS: () => (/* binding */ EVENT_HANDLERS)
+/* harmony export */ });
+/* harmony import */ var _events_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./events.names */ "./src/events/events.names.js");
+/* harmony import */ var _close_all_toasts_event_handler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./close-all-toasts.event-handler */ "./src/events/close-all-toasts.event-handler.js");
+/* harmony import */ var _commands_about_command_handler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/about.command-handler */ "./src/commands/about.command-handler.js");
+/* harmony import */ var _commands_clear_command_handler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../commands/clear.command-handler */ "./src/commands/clear.command-handler.js");
+/* harmony import */ var _commands_contact_command_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../commands/contact.command-handler */ "./src/commands/contact.command-handler.js");
+/* harmony import */ var _commands_education_command_handler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../commands/education.command-handler */ "./src/commands/education.command-handler.js");
+/* harmony import */ var _commands_experience_command_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../commands/experience.command-handler */ "./src/commands/experience.command-handler.js");
+/* harmony import */ var _commands_help_command_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../commands/help.command-handler */ "./src/commands/help.command-handler.js");
+/* harmony import */ var _commands_projects_command_handler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../commands/projects.command-handler */ "./src/commands/projects.command-handler.js");
+/* harmony import */ var _commands_skills_command_handler__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../commands/skills.command-handler */ "./src/commands/skills.command-handler.js");
+/* harmony import */ var _commands_welcome_command_handler__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../commands/welcome.command-handler */ "./src/commands/welcome.command-handler.js");
+/* harmony import */ var _modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/xterm.module */ "./src/modules/xterm.module.js");
+/* harmony import */ var _modules_notyf_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/notyf.module */ "./src/modules/notyf.module.js");
+/* harmony import */ var _utils_events_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/events.utils */ "./src/utils/events.utils.js");
+/* harmony import */ var _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../commands/commands.names */ "./src/commands/commands.names.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
@@ -1849,137 +2002,136 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 
 
-var COMMANDS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _help_command__WEBPACK_IMPORTED_MODULE_6__.HELP_COMMAND_NAME, {
-  description: _help_command__WEBPACK_IMPORTED_MODULE_6__.HELP_COMMAND_DESCRIPTION,
-  handler: _help_command__WEBPACK_IMPORTED_MODULE_6__.helpCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _clear_command__WEBPACK_IMPORTED_MODULE_1__.CLEAR_COMMAND_NAME, {
-  description: _clear_command__WEBPACK_IMPORTED_MODULE_1__.CLEAR_COMMAND_DESCRIPTION,
-  handler: _clear_command__WEBPACK_IMPORTED_MODULE_1__.clearCommandHandler,
-  shouldBeRegeristedAsEvent: false
-}), _welcome_command__WEBPACK_IMPORTED_MODULE_10__.WELCOME_COMMAND_NAME, {
-  description: _welcome_command__WEBPACK_IMPORTED_MODULE_10__.WELCOME_COMMAND_DESCRIPTION,
-  handler: _welcome_command__WEBPACK_IMPORTED_MODULE_10__.welcomeCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _illiasay_command__WEBPACK_IMPORTED_MODULE_7__.ILLIASAY_COMMAND_NAME, {
-  description: _illiasay_command__WEBPACK_IMPORTED_MODULE_7__.ILLIASAY_COMMAND_DESCRIPTION,
-  handler: _illiasay_command__WEBPACK_IMPORTED_MODULE_7__.illiasayCommandHandler,
-  shouldBeRegeristedAsEvent: false
-}), _contact_command__WEBPACK_IMPORTED_MODULE_2__.CONTACT_COMMAND_NAME, {
-  description: _contact_command__WEBPACK_IMPORTED_MODULE_2__.CONTACT_COMMAND_DESCRIPTION,
-  handler: _contact_command__WEBPACK_IMPORTED_MODULE_2__.contactCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _about_command__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_NAME, {
-  description: _about_command__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION,
-  handler: _about_command__WEBPACK_IMPORTED_MODULE_0__.aboutCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _skills_command__WEBPACK_IMPORTED_MODULE_9__.SKILLS_COMMAND_NAME, {
-  description: _skills_command__WEBPACK_IMPORTED_MODULE_9__.SKILLS_COMMAND_DESCRIPTION,
-  handler: _skills_command__WEBPACK_IMPORTED_MODULE_9__.skillsCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _experience_command__WEBPACK_IMPORTED_MODULE_5__.EXPERIENCE_COMMAND_NAME, {
-  description: _experience_command__WEBPACK_IMPORTED_MODULE_5__.EXPERIENCE_COMMAND_DESCRIPTION,
-  handler: _experience_command__WEBPACK_IMPORTED_MODULE_5__.experienceCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _education_command__WEBPACK_IMPORTED_MODULE_4__.EDUCATION_COMMAND_NAME, {
-  description: _education_command__WEBPACK_IMPORTED_MODULE_4__.EDUCATION_COMMAND_DESCRIPTION,
-  handler: _education_command__WEBPACK_IMPORTED_MODULE_4__.educationCommandHandler,
-  shouldBeRegeristedAsEvent: true
-}), _projects_command__WEBPACK_IMPORTED_MODULE_8__.PROJECTS_COMMAND_NAME, {
-  description: _projects_command__WEBPACK_IMPORTED_MODULE_8__.PROJECTS_COMMAND_DESCRIPTION,
-  handler: _projects_command__WEBPACK_IMPORTED_MODULE_8__.projectsCommandHandler,
-  shouldBeRegeristedAsEvent: true
+
+
+
+
+var EVENT_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, function () {
+  return (0,_close_all_toasts_event_handler__WEBPACK_IMPORTED_MODULE_1__.closeAllToastsEventHandler)(_modules_notyf_module__WEBPACK_IMPORTED_MODULE_12__.notyf);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_about_command_handler__WEBPACK_IMPORTED_MODULE_2__.aboutCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.ABOUT_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_clear_command_handler__WEBPACK_IMPORTED_MODULE_3__.clearCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.CLEAR_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_contact_command_handler__WEBPACK_IMPORTED_MODULE_4__.contactCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.CONTACT_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_education_command_handler__WEBPACK_IMPORTED_MODULE_5__.educationCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.EDUCATION_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_experience_command_handler__WEBPACK_IMPORTED_MODULE_6__.experienceCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.EXPERIENCE_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_help_command_handler__WEBPACK_IMPORTED_MODULE_7__.helpCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.HELP_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_projects_command_handler__WEBPACK_IMPORTED_MODULE_8__.projectsCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.PROJECTS_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_skills_command_handler__WEBPACK_IMPORTED_MODULE_9__.skillsCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.SKILLS_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_13__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_11__.term, _commands_welcome_command_handler__WEBPACK_IMPORTED_MODULE_10__.welcomeCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_14__.WELCOME_COMMAND_NAME);
 });
 
 /***/ }),
 
-/***/ "./src/commands/projects.command.js":
-/*!******************************************!*\
-  !*** ./src/commands/projects.command.js ***!
-  \******************************************/
+/***/ "./src/events/events.list.js":
+/*!***********************************!*\
+  !*** ./src/events/events.list.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PROJECTS_COMMAND_DESCRIPTION: () => (/* binding */ PROJECTS_COMMAND_DESCRIPTION),
-/* harmony export */   PROJECTS_COMMAND_NAME: () => (/* binding */ PROJECTS_COMMAND_NAME),
-/* harmony export */   projectsCommandHandler: () => (/* binding */ projectsCommandHandler)
+/* harmony export */   EVENTS: () => (/* binding */ EVENTS)
 /* harmony export */ });
-var PROJECTS_COMMAND_NAME = 'projects';
-var PROJECTS_COMMAND_DESCRIPTION = 'Displays my featured projects';
-var PROJECTS_MESSAGE = "\x1B[1;33mProjects Showcase\x1B[0m\n\n\x1B[1;34m1. Tarcza dla Ukrainy\x1B[0m - \x1B[1;36mhttps://tarczadlaukrainy.pl\x1B[0m\n   \x1B[1;32mSocial Help Project\x1B[0m - Supports Ukrainian soldiers and civilians affected by war.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n\x1B[1;34m2. Artist Portfolio\x1B[0m - \x1B[1;36mhttps://anastasiia-tereshchenko.art\x1B[0m\n   \x1B[1;32mCustom Admin & Art Showcase\x1B[0m - A digital portfolio for an artist to showcase and manage paintings.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
-var projectsCommandHandler = function projectsCommandHandler(term) {
-  term.write(PROJECTS_MESSAGE);
-};
+/* harmony import */ var _events_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./events.names */ "./src/events/events.names.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+var EVENTS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME));
 
 /***/ }),
 
-/***/ "./src/commands/skills.command.js":
-/*!****************************************!*\
-  !*** ./src/commands/skills.command.js ***!
-  \****************************************/
+/***/ "./src/events/events.names.js":
+/*!************************************!*\
+  !*** ./src/events/events.names.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SKILLS_COMMAND_DESCRIPTION: () => (/* binding */ SKILLS_COMMAND_DESCRIPTION),
-/* harmony export */   SKILLS_COMMAND_NAME: () => (/* binding */ SKILLS_COMMAND_NAME),
-/* harmony export */   skillsCommandHandler: () => (/* binding */ skillsCommandHandler)
-/* harmony export */ });
-var SKILLS_COMMAND_NAME = 'skills';
-var SKILLS_COMMAND_DESCRIPTION = 'Displays my technical skills';
-var SKILLS_MESSAGE = "\x1B[1;33mTechnical Skills\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDE80  Frontend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: JavaScript, TypeScript, Rust/WASM\n\u2022 React Stack: React, Next.js, Redux, Zustand, Jest, React Testing Library, Storybook\n\u2022 Layout: HTML, CSS, Gulp, SASS, LESS, SCCS, Tailwind\x1B[0m\n\n\x1B[1;34m\uD83D\uDDA5\uFE0F  Backend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: Node.js, C#, Rust\n\u2022 Frameworks: Express.js, Nest.js, .NET, Gotham, Serverless Framework\n\u2022 APIs: REST, GraphQL, gRPC\n\u2022 Databases: MongoDB, PostgreSQL, RavenDB\x1B[0m\n\n\x1B[1;34m\uD83D\uDEE0\uFE0F  DevOps & Infrastructure\x1B[0m\n\n\x1B[1;32m\u2022 Docker, Nginx, Apache, RabbitMQ, Redis, CI/CD\n\u2022 Swagger, Postman, AWS, Terraform, Ansible\x1B[0m\n\n\x1B[1;34m\uD83D\uDCC2  Project Management & Tools\x1B[0m\n\n\x1B[1;32m\u2022 Git, GitHub, Bitbucket\n\u2022 Jira, Confluence, Trello, Slack, ClickUp\n\u2022 Agile Methodologies: SCRUM, Kanban\x1B[0m\n\n\x1B[1;34m\uD83D\uDCDA  Software Architecture & Best Practices\x1B[0m\n\n\x1B[1;32m\u2022 Web/Design Patterns, System Design\n\u2022 SOLID, KISS, DRY, Microservices Architecture\x1B[0m\n\n\x1B[1;34m\uD83C\uDFA8  Others\x1B[0m\n\n\x1B[1;32m\u2022 Figma, DrawIO, Strapi\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.\n\n\x1B[1;34mMaster your skills and build great things! \uD83D\uDE80\x1B[0m";
-var skillsCommandHandler = function skillsCommandHandler(term) {
-  term.write(SKILLS_MESSAGE);
-};
-
-/***/ }),
-
-/***/ "./src/commands/welcome.command.js":
-/*!*****************************************!*\
-  !*** ./src/commands/welcome.command.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   WELCOME_COMMAND_DESCRIPTION: () => (/* binding */ WELCOME_COMMAND_DESCRIPTION),
-/* harmony export */   WELCOME_COMMAND_NAME: () => (/* binding */ WELCOME_COMMAND_NAME),
-/* harmony export */   welcomeCommandHandler: () => (/* binding */ welcomeCommandHandler)
-/* harmony export */ });
-var WELCOME_COMMAND_NAME = 'welcome';
-var WELCOME_COMMAND_DESCRIPTION = 'Prints welcome message';
-var WELCOME_MESSAGE = "\x1B[1;33mWelcome to my interactive terminal portfolio!\x1B[1;36m\n\n\x1B[1;34mThis is a unique space where you can explore my work, experience, and skills through a terminal interface.\x1B[0m\n\n\x1B[1;33mAbout Me:\x1B[0m\n\nI am Illia Halchun, a full-stack software developer with expertise in modern web technologies.\nI specialize in building high-performance applications using:\n\n\x1B[1;32m\u2022 Next.js, Nest.js and Node.js\n\u2022 TypeScript and JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands and start exploring.\n\n\x1B[1;34mEnjoy your stay and have fun exploring my work!\x1B[0m";
-var welcomeCommandHandler = function welcomeCommandHandler(term) {
-  term.write(WELCOME_MESSAGE);
-};
-
-/***/ }),
-
-/***/ "./src/scripts/notyf.js":
-/*!******************************!*\
-  !*** ./src/scripts/notyf.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ABOUT_EVENT_NAME: () => (/* binding */ ABOUT_EVENT_NAME),
+/* harmony export */   CLEAR_EVENT_NAME: () => (/* binding */ CLEAR_EVENT_NAME),
 /* harmony export */   CLOSE_ALL_TOASTS_EVENT_NAME: () => (/* binding */ CLOSE_ALL_TOASTS_EVENT_NAME),
-/* harmony export */   showClearToast: () => (/* binding */ showClearToast),
-/* harmony export */   showScrollableToast: () => (/* binding */ showScrollableToast)
+/* harmony export */   CONTACT_EVENT_NAME: () => (/* binding */ CONTACT_EVENT_NAME),
+/* harmony export */   EDUCATION_EVENT_NAME: () => (/* binding */ EDUCATION_EVENT_NAME),
+/* harmony export */   EVENT_NAME_SUFFIX: () => (/* binding */ EVENT_NAME_SUFFIX),
+/* harmony export */   EXPERIENCE_EVENT_NAME: () => (/* binding */ EXPERIENCE_EVENT_NAME),
+/* harmony export */   HELP_EVENT_NAME: () => (/* binding */ HELP_EVENT_NAME),
+/* harmony export */   PROJECTS_EVENT_NAME: () => (/* binding */ PROJECTS_EVENT_NAME),
+/* harmony export */   SKILLS_EVENT_NAME: () => (/* binding */ SKILLS_EVENT_NAME),
+/* harmony export */   WELCOME_EVENT_NAME: () => (/* binding */ WELCOME_EVENT_NAME)
+/* harmony export */ });
+/* harmony import */ var _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../commands/commands.names */ "./src/commands/commands.names.js");
+
+var EVENT_NAME_SUFFIX = 'event';
+var CLOSE_ALL_TOASTS_EVENT_NAME = "close-all-toasts-".concat(EVENT_NAME_SUFFIX);
+var ABOUT_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var CLEAR_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var CONTACT_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var EDUCATION_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var EXPERIENCE_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var HELP_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var PROJECTS_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var SKILLS_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var WELCOME_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+
+/***/ }),
+
+/***/ "./src/modules/events.module.js":
+/*!**************************************!*\
+  !*** ./src/modules/events.module.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _events_events_handlers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../events/events.handlers */ "./src/events/events.handlers.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+Object.entries(_events_events_list__WEBPACK_IMPORTED_MODULE_0__.EVENTS).forEach(function (_ref) {
+  var _ref2 = _slicedToArray(_ref, 2),
+    name = _ref2[0],
+    _ = _ref2[1];
+  document.addEventListener(name, _events_events_handlers__WEBPACK_IMPORTED_MODULE_1__.EVENT_HANDLERS[name]);
+});
+
+/***/ }),
+
+/***/ "./src/modules/notyf.module.js":
+/*!*************************************!*\
+  !*** ./src/modules/notyf.module.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   INFINITY_DURATION: () => (/* binding */ INFINITY_DURATION),
+/* harmony export */   notyf: () => (/* binding */ notyf)
 /* harmony export */ });
 /* harmony import */ var notyf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! notyf */ "./node_modules/notyf/notyf.es.js");
 /* harmony import */ var notyf_notyf_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! notyf/notyf.min.css */ "./node_modules/notyf/notyf.min.css");
-/* harmony import */ var _commands_help_command__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/help.command */ "./src/commands/help.command.js");
 
 
-
-var SECOND_IN_MILLISECONDS = 1000;
-var INFINITY_DURATION = SECOND_IN_MILLISECONDS * 100000;
+var INFINITY_DURATION = 1000 * 100000;
 var notyf = new notyf__WEBPACK_IMPORTED_MODULE_0__.Notyf({
   types: [{
     type: 'info',
@@ -1988,51 +2140,36 @@ var notyf = new notyf__WEBPACK_IMPORTED_MODULE_0__.Notyf({
     className: 'notyf-info'
   }]
 });
-var CLOSE_ALL_TOASTS_EVENT_NAME = "close-all-toasts";
-document.addEventListener(CLOSE_ALL_TOASTS_EVENT_NAME, function () {
-  return notyf.dismissAll();
-});
-var showClearToast = function showClearToast() {
-  notyf.open({
-    type: 'info',
-    duration: INFINITY_DURATION,
-    message: "Type or click <button onclick=\"document.dispatchEvent(new Event('".concat(_commands_help_command__WEBPACK_IMPORTED_MODULE_2__.HELP_COMMAND_NAME, "'))\"><strong>[help]</strong></button> to see the list of available commands. ")
-  });
-};
-var showScrollableToast = function showScrollableToast() {
-  notyf.open({
-    type: 'info',
-    duration: 3 * SECOND_IN_MILLISECONDS,
-    message: "Content in the terminal can be scrolled down."
-  });
-};
 
 /***/ }),
 
-/***/ "./src/scripts/xterm.js":
-/*!******************************!*\
-  !*** ./src/scripts/xterm.js ***!
-  \******************************/
+/***/ "./src/modules/xterm.module.js":
+/*!*************************************!*\
+  !*** ./src/modules/xterm.module.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   term: () => (/* binding */ term)
+/* harmony export */ });
 /* harmony import */ var _xterm_xterm_lib_xterm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @xterm/xterm/lib/xterm.js */ "./node_modules/@xterm/xterm/lib/xterm.js");
 /* harmony import */ var _xterm_xterm_lib_xterm_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_xterm_xterm_lib_xterm_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var xterm_link_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! xterm-link-provider */ "./node_modules/xterm-link-provider/lib/esm/index.js");
-/* harmony import */ var _state_prompt__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../state/prompt */ "./src/state/prompt.js");
+/* harmony import */ var _state_prompt_state__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../state/prompt.state */ "./src/state/prompt.state.js");
 /* harmony import */ var xterm_addon_fit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! xterm-addon-fit */ "./node_modules/xterm-addon-fit/lib/xterm-addon-fit.js");
 /* harmony import */ var xterm_addon_fit__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(xterm_addon_fit__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var xterm_addon_web_links__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! xterm-addon-web-links */ "./node_modules/xterm-addon-web-links/lib/xterm-addon-web-links.js");
 /* harmony import */ var xterm_addon_web_links__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(xterm_addon_web_links__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _utils_cursor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/cursor */ "./src/utils/cursor.js");
-/* harmony import */ var _commands_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../commands/handler */ "./src/commands/handler.js");
-/* harmony import */ var _commands_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../commands/list */ "./src/commands/list.js");
-/* harmony import */ var _commands_welcome_command__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../commands/welcome.command */ "./src/commands/welcome.command.js");
-/* harmony import */ var _state_history__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../state/history */ "./src/state/history.js");
-/* harmony import */ var _notyf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./notyf */ "./src/scripts/notyf.js");
-/* harmony import */ var _commands_demo_command__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../commands/demo.command */ "./src/commands/demo.command.js");
-/* harmony import */ var _commands_demo_command__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_commands_demo_command__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/cursor.utils */ "./src/utils/cursor.utils.js");
+/* harmony import */ var _commands_commands_dispatcher__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../commands/commands.dispatcher */ "./src/commands/commands.dispatcher.js");
+/* harmony import */ var _commands_commands_handlers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../commands/commands.handlers */ "./src/commands/commands.handlers.js");
+/* harmony import */ var _state_history_state__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../state/history.state */ "./src/state/history.state.js");
+/* harmony import */ var _commands_commands_names__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../commands/commands.names */ "./src/commands/commands.names.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _utils_events_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/events.utils */ "./src/utils/events.utils.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -2085,95 +2222,78 @@ window.addEventListener('resize', function () {
 
 // Welcome message
 
-term.write(_utils_cursor__WEBPACK_IMPORTED_MODULE_5__.CURSOR);
-term.write(_commands_welcome_command__WEBPACK_IMPORTED_MODULE_8__.WELCOME_COMMAND_NAME);
-term.writeln("");
-term.writeln("");
-_commands_list__WEBPACK_IMPORTED_MODULE_7__.COMMANDS[_commands_welcome_command__WEBPACK_IMPORTED_MODULE_8__.WELCOME_COMMAND_NAME].handler(term);
+term.write(_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.CURSOR);
+term.write(_commands_commands_names__WEBPACK_IMPORTED_MODULE_9__.WELCOME_COMMAND_NAME);
 term.writeln('');
-(0,_utils_cursor__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
+term.writeln('');
+_commands_commands_handlers__WEBPACK_IMPORTED_MODULE_7__.COMMAND_HANDLERS[_commands_commands_names__WEBPACK_IMPORTED_MODULE_9__.WELCOME_COMMAND_NAME](term);
+term.writeln('');
+(0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
 
 // Prompt handling
 
 term.onData(function (_char) {
-  var prompt = (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.getPrompt)();
+  var prompt = (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.getPrompt)();
   switch (_char) {
     case "\x03":
       // Ctrl+C
       term.write('^C');
       term.writeln('');
-      (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
+      (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
       break;
     case '\r':
       // Enter
-      (0,_commands_handler__WEBPACK_IMPORTED_MODULE_6__.handleCommand)(term, prompt);
-      (0,_state_history__WEBPACK_IMPORTED_MODULE_9__.pushHistoryElement)(prompt);
-      (0,_state_history__WEBPACK_IMPORTED_MODULE_9__.returnHistoryIndexToStart)();
-      (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
+      (0,_commands_commands_dispatcher__WEBPACK_IMPORTED_MODULE_6__.dispatchCommand)(term, prompt);
+      (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.pushHistoryElement)(prompt);
+      (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.returnHistoryIndexToStart)();
+      (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
       break;
     case "\x7F":
       // Backspace (DEL)
-      (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.deleteCharFromThePrompt)(term);
+      (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.deleteCharFromThePrompt)(term);
       break;
     case '\x1b[A':
       // Arrow Up
-      var prevHistoryElement = (0,_state_history__WEBPACK_IMPORTED_MODULE_9__.getPrevHistoryElement)();
-      (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, prevHistoryElement);
+      var prevHistoryElement = (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.getPrevHistoryElement)();
+      (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, prevHistoryElement);
       break;
     case '\x1b[B':
       // Arrow Down
-      var nextHistoryElement = (0,_state_history__WEBPACK_IMPORTED_MODULE_9__.getNextHistoryElement)();
-      (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, nextHistoryElement);
+      var nextHistoryElement = (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.getNextHistoryElement)();
+      (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, nextHistoryElement);
       break;
     default:
       // Print all other characters
       if (_char >= String.fromCharCode(0x20) && _char <= String.fromCharCode(0x7e) || _char >= "\xA0") {
-        (0,_state_prompt__WEBPACK_IMPORTED_MODULE_2__.addCharToThePrompt)(term, _char);
+        (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.addCharToThePrompt)(term, _char);
       }
   }
 });
 
-// Registering event listeners
+// Registering commands event listeners
 
-Object.entries(_commands_list__WEBPACK_IMPORTED_MODULE_7__.COMMANDS).forEach(function (_ref) {
+Object.entries(_events_events_list__WEBPACK_IMPORTED_MODULE_11__.EVENTS).forEach(function (_ref) {
   var _ref2 = _slicedToArray(_ref, 2),
-    name = _ref2[0],
-    options = _ref2[1];
-  if (options.shouldBeRegeristedAsEvent) {
-    document.addEventListener(name, function () {
-      term.clear();
-      term.write(name);
-      term.writeln("");
-      term.writeln("");
-      options.handler(term);
-      term.writeln('');
-      (0,_utils_cursor__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
-      document.dispatchEvent(new Event(_notyf__WEBPACK_IMPORTED_MODULE_10__.CLOSE_ALL_TOASTS_EVENT_NAME));
-      setTimeout(function () {
-        term.scrollToTop();
-        term.focus();
-        if (term.buffer._normal._buffer.ybase) {
-          (0,_notyf__WEBPACK_IMPORTED_MODULE_10__.showScrollableToast)();
-        }
-      }, 0);
-    });
-  }
+    eventName = _ref2[0],
+    event = _ref2[1];
+  document.addEventListener(name, function () {});
 });
 
 // Links handling
 
 var linksRegex = /\[(.*?)\]/g;
-term.registerLinkProvider(new xterm_link_provider__WEBPACK_IMPORTED_MODULE_1__.LinkProvider(term, linksRegex, function (_, text) {
-  var commandName = text;
-  document.dispatchEvent(new Event(commandName));
+term.registerLinkProvider(new xterm_link_provider__WEBPACK_IMPORTED_MODULE_1__.LinkProvider(term, linksRegex, function (_, commandName) {
+  var eventName = (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_12__.getEventNameFromCommandName)(commandName);
+  var event = _events_events_list__WEBPACK_IMPORTED_MODULE_11__.EVENTS[eventName];
+  (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_10__.dispatchEvent)(event);
 }));
 
 /***/ }),
 
-/***/ "./src/state/history.js":
-/*!******************************!*\
-  !*** ./src/state/history.js ***!
-  \******************************/
+/***/ "./src/state/history.state.js":
+/*!************************************!*\
+  !*** ./src/state/history.state.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2207,10 +2327,10 @@ var getNextHistoryElement = function getNextHistoryElement() {
 
 /***/ }),
 
-/***/ "./src/state/prompt.js":
-/*!*****************************!*\
-  !*** ./src/state/prompt.js ***!
-  \*****************************/
+/***/ "./src/state/prompt.state.js":
+/*!***********************************!*\
+  !*** ./src/state/prompt.state.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2222,7 +2342,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   getPrompt: () => (/* binding */ getPrompt),
 /* harmony export */   setPrompt: () => (/* binding */ setPrompt)
 /* harmony export */ });
-/* harmony import */ var _utils_cursor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/cursor */ "./src/utils/cursor.js");
+/* harmony import */ var _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/cursor.utils */ "./src/utils/cursor.utils.js");
 
 var prompt = '';
 var addCharToThePrompt = function addCharToThePrompt(term, _char) {
@@ -2230,7 +2350,7 @@ var addCharToThePrompt = function addCharToThePrompt(term, _char) {
   term.write(_char);
 };
 var deleteCharFromThePrompt = function deleteCharFromThePrompt(term) {
-  if (term._core.buffer.x > _utils_cursor__WEBPACK_IMPORTED_MODULE_0__.CURSOR.length) {
+  if (term._core.buffer.x > _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.CURSOR.length) {
     if (prompt.length > 0) {
       prompt = prompt.slice(0, prompt.length - 1);
       term.write('\b \b');
@@ -2244,7 +2364,7 @@ var setPrompt = function setPrompt(term, value) {
 };
 var clearPrompt = function clearPrompt(term) {
   term.write('\x1b[2K\r');
-  term.write("".concat(_utils_cursor__WEBPACK_IMPORTED_MODULE_0__.CURSOR));
+  term.write("".concat(_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.CURSOR));
   prompt = '';
 };
 var getPrompt = function getPrompt() {
@@ -2306,10 +2426,58 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/utils/cursor.js":
-/*!*****************************!*\
-  !*** ./src/utils/cursor.js ***!
-  \*****************************/
+/***/ "./src/tooltips/clear.tooltip.js":
+/*!***************************************!*\
+  !*** ./src/tooltips/clear.tooltip.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   showClearToast: () => (/* binding */ showClearToast)
+/* harmony export */ });
+/* harmony import */ var _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/notyf.module */ "./src/modules/notyf.module.js");
+/* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
+
+
+var showClearToast = function showClearToast() {
+  _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.notyf.open({
+    type: 'info',
+    duration: _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.INFINITY_DURATION,
+    message: "Type or click <button onclick=\"document.dispatchEvent(new Event('".concat(_events_events_names__WEBPACK_IMPORTED_MODULE_1__.HELP_EVENT_NAME, "'))\"><strong>[help]</strong></button> to see the list of available commands. ")
+  });
+};
+
+/***/ }),
+
+/***/ "./src/tooltips/scrollable.tooltip.js":
+/*!********************************************!*\
+  !*** ./src/tooltips/scrollable.tooltip.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   showScrollableToast: () => (/* binding */ showScrollableToast)
+/* harmony export */ });
+/* harmony import */ var _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/notyf.module */ "./src/modules/notyf.module.js");
+
+var showScrollableToast = function showScrollableToast() {
+  _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.notyf.open({
+    type: 'info',
+    duration: 3 * 1000,
+    message: "Content in the terminal can be scrolled down."
+  });
+};
+
+/***/ }),
+
+/***/ "./src/utils/cursor.utils.js":
+/*!***********************************!*\
+  !*** ./src/utils/cursor.utils.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2326,6 +2494,51 @@ var updateCursor = function updateCursor(term) {
 var clearPrompt = function clearPrompt(term) {
   term.write('\x1b[2K\r');
   term.write("".concat(CURSOR));
+};
+
+/***/ }),
+
+/***/ "./src/utils/events.utils.js":
+/*!***********************************!*\
+  !*** ./src/utils/events.utils.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   convertCommandHandlerToEventHandler: () => (/* binding */ convertCommandHandlerToEventHandler),
+/* harmony export */   getEventNameFromCommandName: () => (/* binding */ getEventNameFromCommandName)
+/* harmony export */ });
+/* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
+/* harmony import */ var _cursor_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cursor.utils */ "./src/utils/cursor.utils.js");
+/* harmony import */ var _tooltips_scrollable_tooltip__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tooltips/scrollable.tooltip */ "./src/tooltips/scrollable.tooltip.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+
+
+
+
+
+var getEventNameFromCommandName = function getEventNameFromCommandName(commandName) {
+  return commandName + "-".concat(_events_events_names__WEBPACK_IMPORTED_MODULE_0__.EVENT_NAME_SUFFIX);
+};
+var convertCommandHandlerToEventHandler = function convertCommandHandlerToEventHandler(term, command, commandName) {
+  term.clear();
+  term.write(commandName);
+  term.writeln('');
+  term.writeln('');
+  command(term);
+  term.writeln('');
+  (0,_cursor_utils__WEBPACK_IMPORTED_MODULE_1__.updateCursor)(term);
+  setTimeout(function () {
+    (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_4__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME]);
+    term.scrollToTop();
+    term.focus();
+    if (term.buffer._normal._buffer.ybase) {
+      (0,_tooltips_scrollable_tooltip__WEBPACK_IMPORTED_MODULE_2__.showScrollableToast)();
+    }
+  }, 0);
 };
 
 /***/ })
@@ -2411,11 +2624,13 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scripts_xterm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/xterm.js */ "./src/scripts/xterm.js");
-/* harmony import */ var _scripts_notyf_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/notyf.js */ "./src/scripts/notyf.js");
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
-/* harmony import */ var _xterm_xterm_css_xterm_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @xterm/xterm/css/xterm.css */ "./node_modules/@xterm/xterm/css/xterm.css");
+/* harmony import */ var _modules_xterm_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/xterm.module.js */ "./src/modules/xterm.module.js");
+/* harmony import */ var _modules_notyf_module_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notyf.module.js */ "./src/modules/notyf.module.js");
+/* harmony import */ var _modules_events_module_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/events.module.js */ "./src/modules/events.module.js");
+/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
+/* harmony import */ var _xterm_xterm_css_xterm_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @xterm/xterm/css/xterm.css */ "./node_modules/@xterm/xterm/css/xterm.css");
 // JS
+
 
 
 

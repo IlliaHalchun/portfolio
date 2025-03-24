@@ -1,27 +1,29 @@
 import { Terminal } from '@xterm/xterm/lib/xterm.js';
-import {LinkProvider} from 'xterm-link-provider';
+import { LinkProvider } from 'xterm-link-provider';
 import {
     addCharToThePrompt,
     clearPrompt,
     deleteCharFromThePrompt,
-} from '../state/prompt';
+    getPrompt,
+    setPrompt,
+} from '../state/prompt.state';
 import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import { getPrompt, setPrompt } from '../state/prompt';
-import { CURSOR, updateCursor } from '../utils/cursor';
-import { handleCommand } from '../commands/handler';
-import { COMMANDS } from '../commands/list';
-import { WELCOME_COMMAND_NAME} from '../commands/welcome.command';
+import { CURSOR, updateCursor } from '../utils/cursor.utils';
+import { dispatchCommand } from '../commands/commands.dispatcher';
+import { COMMAND_HANDLERS } from '../commands/commands.handlers';
 import {
     getNextHistoryElement,
     getPrevHistoryElement,
     pushHistoryElement,
     returnHistoryIndexToStart,
-} from '../state/history';
-import {CLOSE_ALL_TOASTS_EVENT_NAME, showScrollableToast} from './notyf';
-import {isDemoCommandActive, stopAnimation} from '../commands/demo.command';
+} from '../state/history.state';
+import { WELCOME_COMMAND_NAME } from '../commands/commands.names';
+import { dispatchEvent } from '../events/event.dispatcher';
+import { EVENTS } from '../events/events.list';
+import { getEventNameFromCommandName } from '../utils/events.utils';
 
-const term = new Terminal({
+export const term = new Terminal({
     cursorBlink: true,
     fontSize: 14,
     fontWeight: 400,
@@ -61,10 +63,10 @@ window.addEventListener('resize', () => {
 term.write(CURSOR);
 term.write(WELCOME_COMMAND_NAME);
 
-term.writeln("");
-term.writeln("");
+term.writeln('');
+term.writeln('');
 
-COMMANDS[WELCOME_COMMAND_NAME].handler(term);
+COMMAND_HANDLERS[WELCOME_COMMAND_NAME](term);
 term.writeln('');
 updateCursor(term);
 
@@ -80,7 +82,7 @@ term.onData((char) => {
             clearPrompt(term);
             break;
         case '\r': // Enter
-            handleCommand(term, prompt);
+            dispatchCommand(term, prompt);
             pushHistoryElement(prompt);
             returnHistoryIndexToStart();
             clearPrompt(term);
@@ -97,53 +99,30 @@ term.onData((char) => {
             setPrompt(term, nextHistoryElement);
             break;
         default: // Print all other characters
-            if ((char >= String.fromCharCode(0x20) && char <= String.fromCharCode(0x7e)) || char >= '\u00a0') {
+            if (
+                (char >= String.fromCharCode(0x20) &&
+                    char <= String.fromCharCode(0x7e)) ||
+                char >= '\u00a0'
+            ) {
                 addCharToThePrompt(term, char);
             }
     }
 });
 
-// Registering event listeners
+// Registering commands event listeners
 
-Object.entries(COMMANDS).forEach(([name, options]) => {
-    if (options.shouldBeRegisteredAsEvent) {
-        document.addEventListener(name, () => {
-            term.clear();
-            term.write(name);
-
-            term.writeln("");
-            term.writeln("");
-
-            options.handler(term)
-            term.writeln('');
-            updateCursor(term);
-
-            document.dispatchEvent(new Event(CLOSE_ALL_TOASTS_EVENT_NAME));
-            
-            setTimeout(() => {
-                term.scrollToTop();
-                term.focus();
-
-                if (term.buffer._normal._buffer.ybase) {
-                    showScrollableToast();
-                }
-            }, 0)
-        });
-
-    }
-})
+Object.entries(EVENTS).forEach(([eventName, event]) => {
+    document.addEventListener(name, () => {});
+});
 
 // Links handling
 
 const linksRegex = /\[(.*?)\]/g;
 
 term.registerLinkProvider(
-  new LinkProvider(
-    term,
-    linksRegex,
-      (_, text) => {
-        const commandName = text;
-        document.dispatchEvent(new Event(commandName))
-    }
-  )
-)
+    new LinkProvider(term, linksRegex, (_, commandName) => {
+        const eventName = getEventNameFromCommandName(commandName);
+        const event = EVENTS[eventName];
+        dispatchEvent(event);
+    })
+);

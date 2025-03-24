@@ -32,7 +32,7 @@ module.exports = {
             directory: path.resolve(__dirname, 'dist'),
         },
         open: true,
-        port: 3000,
+        port: 3001,
         hot: true,
     },
     plugins: [
@@ -40,8 +40,8 @@ module.exports = {
             template: './src/index.html',
         }),
         new FaviconsWebpackPlugin({
-            logo: path.resolve('src/favicon.ico'), 
-            inject: true, 
+            logo: path.resolve('src/favicon.ico'),
+            inject: true,
         }),
     ],
     mode: 'development',

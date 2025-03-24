@@ -1,4 +1,4 @@
-import { CURSOR } from '../utils/cursor';
+import { CURSOR } from '../utils/cursor.utils';
 
 let prompt = '';
 

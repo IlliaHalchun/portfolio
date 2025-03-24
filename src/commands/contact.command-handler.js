@@ -12,10 +12,7 @@ const CONTACT_MESSAGE = `\x1b[1;33mContact Me\x1b[1;36m
 
 \x1b[1;33mNeed Guidance?\x1b[0m
 
-Type \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
-
-export const CONTACT_COMMAND_NAME = 'contact';
-export const CONTACT_COMMAND_DESCRIPTION = 'Displays contact information.';
+Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
 export const contactCommandHandler = (term) => {
     term.write(CONTACT_MESSAGE);

@@ -44,10 +44,6 @@ ${middle}
 ${topBottom}`;
 };
 
-export const ILLIASAY_COMMAND_NAME = 'illiasay';
-export const ILLIASAY_COMMAND_DESCRIPTION =
-    'Displays an ASCII portrait of me with a speech bubble.';
-
 export const illiasayCommandHandler = (term, message) => {
     if (message.trim().length === 0) {
         term.write('Please specify illiasay message');

@@ -1,6 +1,7 @@
 // JS
-import './scripts/xterm.js';
-import './scripts/notyf.js';
+import './modules/xterm.module.js';
+import './modules/notyf.module.js';
+import './modules/events.module.js';
 
 // Styles
 import './styles/main.css';

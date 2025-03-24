@@ -1,6 +1,3 @@
-export const SKILLS_COMMAND_NAME = 'skills';
-export const SKILLS_COMMAND_DESCRIPTION = 'Displays my technical skills';
-
 const SKILLS_MESSAGE = `\x1b[1;33mTechnical Skills\x1b[1;36m
 
 \x1b[1;34m🚀  Frontend Development\x1b[0m
@@ -38,10 +35,8 @@ const SKILLS_MESSAGE = `\x1b[1;33mTechnical Skills\x1b[1;36m
 
 \x1b[1;33mNeed Guidance?\x1b[0m
 
-Type \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.
-
-\x1b[1;34mMaster your skills and build great things! 🚀\x1b[0m`;
+Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
 export const skillsCommandHandler = (term) => {
     term.write(SKILLS_MESSAGE);
-}
+};

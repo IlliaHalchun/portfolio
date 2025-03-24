@@ -1,0 +1,10 @@
+export const ABOUT_COMMAND_NAME = 'about';
+export const CLEAR_COMMAND_NAME = 'clear';
+export const CONTACT_COMMAND_NAME = 'contact';
+export const EDUCATION_COMMAND_NAME = 'education';
+export const EXPERIENCE_COMMAND_NAME = 'experience';
+export const HELP_COMMAND_NAME = 'help';
+export const ILLIASAY_COMMAND_NAME = 'illiasay';
+export const PROJECTS_COMMAND_NAME = 'projects';
+export const SKILLS_COMMAND_NAME = 'skills';
+export const WELCOME_COMMAND_NAME = 'welcome';
