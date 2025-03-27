@@ -1,3 +1,5 @@
+import { emulateCommandWriting } from '../utils/commands.utils';
+
 const ILLIA_PORTRAIT = `      _______
      /       \\
     |  O   O  |  <- Illia
@@ -44,7 +46,7 @@ ${middle}
 ${topBottom}`;
 };
 
-export const illiasayCommandHandler = (term, message) => {
+export const illiasayCommandHandler = async (term, message) => {
     if (message.trim().length === 0) {
         term.write('Please specify illiasay message');
         return;
@@ -55,5 +57,5 @@ export const illiasayCommandHandler = (term, message) => {
     const output = `${ILLIA_PORTRAIT}
 ${speechBubble}`;
 
-    term.write(output);
+    await emulateCommandWriting(term, output);
 };

@@ -22,6 +22,7 @@ import { WELCOME_COMMAND_NAME } from '../commands/commands.names';
 import { dispatchEvent } from '../events/event.dispatcher';
 import { EVENTS } from '../events/events.list';
 import { getEventNameFromCommandName } from '../utils/events.utils';
+import { isTerminalEmulatesWriting } from '../utils/commands.utils';
 
 export const term = new Terminal({
     cursorBlink: true,
@@ -66,15 +67,19 @@ term.write(WELCOME_COMMAND_NAME);
 term.writeln('');
 term.writeln('');
 
-COMMAND_HANDLERS[WELCOME_COMMAND_NAME](term);
+await COMMAND_HANDLERS[WELCOME_COMMAND_NAME](term);
+
 term.writeln('');
 updateCursor(term);
 
 // Prompt handling
 
-term.onData((char) => {
+term.onData(async (char) => {
     const prompt = getPrompt();
 
+    if (isTerminalEmulatesWriting())
+        return;
+    
     switch (char) {
         case '\u0003': // Ctrl+C
             term.write('^C');
@@ -82,7 +87,7 @@ term.onData((char) => {
             clearPrompt(term);
             break;
         case '\r': // Enter
-            dispatchCommand(term, prompt);
+            await dispatchCommand(term, prompt);
             pushHistoryElement(prompt);
             returnHistoryIndexToStart();
             clearPrompt(term);

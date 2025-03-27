@@ -9,6 +9,7 @@ import {
     SKILLS_COMMAND_DESCRIPTION,
     WELCOME_COMMAND_DESCRIPTION,
 } from './commands.descriptions';
+import { emulateCommandWriting } from '../utils/commands.utils';
 
 const HELP_MESSAGE = `\x1b[1;33mHelp Menu\x1b[1;36m
 
@@ -40,6 +41,6 @@ clear        - ${CLEAR_COMMAND_DESCRIPTION}
 
 \x1b[1;34mType or click a command to begin exploring.\x1b[0m`;
 
-export const helpCommandHandler = (term) => {
-    term.write(HELP_MESSAGE);
+export const helpCommandHandler = async (term) => {
+    await emulateCommandWriting(term, HELP_MESSAGE);
 };

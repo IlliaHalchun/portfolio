@@ -1,3 +1,5 @@
+import { emulateCommandWriting } from '../utils/commands.utils';
+
 const PROJECTS_MESSAGE = `\x1b[1;33mProjects Showcase\x1b[0m
 
 \x1b[1;34m1. Tarcza dla Ukrainy\x1b[0m - \x1b[1;36mhttps://tarczadlaukrainy.pl\x1b[0m
@@ -18,6 +20,6 @@ const PROJECTS_MESSAGE = `\x1b[1;33mProjects Showcase\x1b[0m
 
 Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
-export const projectsCommandHandler = (term) => {
-    term.write(PROJECTS_MESSAGE);
+export const projectsCommandHandler = async (term) => {
+    await emulateCommandWriting(term, PROJECTS_MESSAGE);
 };

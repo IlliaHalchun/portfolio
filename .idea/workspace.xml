@@ -5,54 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21855924-da33-4361-bca0-15b2818cbc40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/clear.command-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/commands.descriptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/commands.handlers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/commands.names.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/help.command-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/close-all-toasts.event-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/event.dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/events.handlers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/events.list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/events.names.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/events.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/notyf.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tooltips/clear.tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tooltips/scrollable.tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/commands.utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/events.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/about.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/about.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/clear.command.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/contact.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/contact.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/demo.command.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/education.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/education.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/experience.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/experience.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/help.command.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/illiasay.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/illiasay.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/projects.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/projects.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/skills.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/skills.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/welcome.command.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/notyf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/xterm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/xterm.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/history.state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/prompt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/prompt.state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/notyf.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/notyf.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cursor.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/about.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/about.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/contact.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/contact.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/education.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/education.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/experience.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/experience.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/help.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/illiasay.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/illiasay.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/projects.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/projects.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/skills.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/skills.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/events.handlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.handlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/events.list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/events.names.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.names.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/xterm.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/xterm.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/commands.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/commands.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/events.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/events.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,21 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Programming/portfolio",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\illia.halchun\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Programming/portfolio&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\illia.halchun\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -127,6 +96,10 @@
       <workItem from="1742816374664" duration="1243000" />
       <workItem from="1742818730544" duration="2380000" />
       <workItem from="1742822873194" duration="10263000" />
+      <workItem from="1742898163545" duration="117000" />
+      <workItem from="1742951228240" duration="2514000" />
+      <workItem from="1742954522775" duration="2451000" />
+      <workItem from="1743026866138" duration="3766000" />
     </task>
     <servers />
   </component>

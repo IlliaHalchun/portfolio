@@ -5,7 +5,7 @@ import { dispatchEvent } from '../events/event.dispatcher';
 import { EVENTS } from '../events/events.list';
 import { CLOSE_ALL_TOASTS_EVENT_NAME } from '../events/events.names';
 
-export const dispatchCommand = (term, prompt) => {
+export const dispatchCommand = async (term, prompt) => {
     const [command, ...parameters] = prompt.trim().split(' ');
 
     if (!command) return;
@@ -15,7 +15,7 @@ export const dispatchCommand = (term, prompt) => {
 
     if (command in COMMAND_HANDLERS) {
         dispatchEvent(EVENTS[CLOSE_ALL_TOASTS_EVENT_NAME]);
-        COMMAND_HANDLERS[command](term, parameters.join(' '));
+        await COMMAND_HANDLERS[command](term, parameters.join(' '));
     } else {
         term.write(`${command}: command not found`);
     }

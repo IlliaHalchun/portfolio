@@ -10,7 +10,7 @@ import { EVENTS } from '../events/events.list';
 export const getEventNameFromCommandName = (commandName) =>
     commandName + `-${EVENT_NAME_SUFFIX}`;
 
-export const convertCommandHandlerToEventHandler = (
+export const convertCommandHandlerToEventHandler = async (
     term,
     command,
     commandName
@@ -21,7 +21,7 @@ export const convertCommandHandlerToEventHandler = (
     term.writeln('');
     term.writeln('');
 
-    command(term);
+    await command(term);
 
     term.writeln('');
     updateCursor(term);

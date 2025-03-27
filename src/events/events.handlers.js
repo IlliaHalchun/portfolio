@@ -12,7 +12,6 @@ import {
 } from './events.names';
 import { closeAllToastsEventHandler } from './close-all-toasts.event-handler';
 import { aboutCommandHandler } from '../commands/about.command-handler';
-import { clearCommandHandler } from '../commands/clear.command-handler';
 import { contactCommandHandler } from '../commands/contact.command-handler';
 import { educationCommandHandler } from '../commands/education.command-handler';
 import { experienceCommandHandler } from '../commands/experience.command-handler';
@@ -42,12 +41,6 @@ export const EVENT_HANDLERS = {
             term,
             aboutCommandHandler,
             ABOUT_COMMAND_NAME
-        ),
-    [CLEAR_EVENT_NAME]: () =>
-        convertCommandHandlerToEventHandler(
-            term,
-            clearCommandHandler,
-            CLEAR_COMMAND_NAME
         ),
     [CONTACT_EVENT_NAME]: () =>
         convertCommandHandlerToEventHandler(

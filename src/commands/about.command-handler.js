@@ -1,3 +1,5 @@
+import { emulateCommandWriting } from '../utils/commands.utils';
+
 const ABOUT_MESSAGE = `\x1b[1;33mAbout Me\x1b[1;36m
 
 \x1b[1;34mExperienced Full Stack Developer with over 4 years of success in developing complex projects across diverse industries.\x1b[0m
@@ -25,6 +27,6 @@ Passionate about mentoring, terminal customization, and DevOps practices. Skille
 
 Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
-export const aboutCommandHandler = (term) => {
-    term.write(ABOUT_MESSAGE);
+export const aboutCommandHandler = async (term) => {
+    await emulateCommandWriting(term, ABOUT_MESSAGE);
 };

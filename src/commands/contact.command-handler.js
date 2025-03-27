@@ -1,3 +1,5 @@
+import { emulateCommandWriting } from '../utils/commands.utils';
+
 const CONTACT_MESSAGE = `\x1b[1;33mContact Me\x1b[1;36m
 
 \x1b[1;34mThank you for visiting my interactive portfolio!\x1b[0m
@@ -14,6 +16,6 @@ const CONTACT_MESSAGE = `\x1b[1;33mContact Me\x1b[1;36m
 
 Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
-export const contactCommandHandler = (term) => {
-    term.write(CONTACT_MESSAGE);
+export const contactCommandHandler = async (term) => {
+    await emulateCommandWriting(term, CONTACT_MESSAGE);
 };

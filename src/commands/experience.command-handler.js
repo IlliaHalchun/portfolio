@@ -1,3 +1,5 @@
+import { emulateCommandWriting } from '../utils/commands.utils';
+
 const EXPERIENCE_MESSAGE = `\x1b[1;33mProfessional Experience\x1b[1;36m
 
 \x1b[1;34m🔹 RavenDB | Internal System | CRM Systems\x1b[0m
@@ -35,6 +37,6 @@ const EXPERIENCE_MESSAGE = `\x1b[1;33mProfessional Experience\x1b[1;36m
 
 Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to explore available commands.`;
 
-export const experienceCommandHandler = (term) => {
-    term.write(EXPERIENCE_MESSAGE);
+export const experienceCommandHandler = async (term) => {
+    await emulateCommandWriting(term, EXPERIENCE_MESSAGE);
 };
