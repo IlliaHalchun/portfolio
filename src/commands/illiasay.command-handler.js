@@ -48,7 +48,7 @@ ${topBottom}`;
 
 export const illiasayCommandHandler = async (term, message) => {
     if (message.trim().length === 0) {
-        term.write('Please specify illiasay message');
+        await emulateCommandWriting(term, 'Please specify illiasay message');
         return;
     }
 

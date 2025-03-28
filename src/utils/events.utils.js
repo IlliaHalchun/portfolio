@@ -2,37 +2,28 @@ import {
     CLOSE_ALL_TOASTS_EVENT_NAME,
     EVENT_NAME_SUFFIX,
 } from '../events/events.names';
-import { updateCursor } from './cursor.utils';
-import { showScrollableToast } from '../tooltips/scrollable.tooltip';
+import { writeCursorWithWritingEmulation } from './cursor.utils';
 import { dispatchEvent } from '../events/event.dispatcher';
 import { EVENTS } from '../events/events.list';
+import { emulateCommandWriting } from './commands.utils';
 
 export const getEventNameFromCommandName = (commandName) =>
     commandName + `-${EVENT_NAME_SUFFIX}`;
 
 export const convertCommandHandlerToEventHandler = async (
     term,
-    command,
+    commandHandler,
     commandName
 ) => {
     term.clear();
-    term.write(commandName);
+    await emulateCommandWriting(term, commandName);
 
     term.writeln('');
     term.writeln('');
 
-    await command(term);
+    dispatchEvent(EVENTS[CLOSE_ALL_TOASTS_EVENT_NAME]);
+    await commandHandler(term);
 
     term.writeln('');
-    updateCursor(term);
-
-    setTimeout(() => {
-        dispatchEvent(EVENTS[CLOSE_ALL_TOASTS_EVENT_NAME]);
-        term.scrollToTop();
-        term.focus();
-
-        if (term.buffer._normal._buffer.ybase) {
-            showScrollableToast();
-        }
-    }, 0);
+    await writeCursorWithWritingEmulation(term);
 };

@@ -9,7 +9,11 @@ import {
 } from '../state/prompt.state';
 import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import { CURSOR, updateCursor } from '../utils/cursor.utils';
+import {
+    CURSOR,
+    updateCursor,
+    writeCursorWithWritingEmulation,
+} from '../utils/cursor.utils';
 import { dispatchCommand } from '../commands/commands.dispatcher';
 import { COMMAND_HANDLERS } from '../commands/commands.handlers';
 import {
@@ -22,16 +26,19 @@ import { WELCOME_COMMAND_NAME } from '../commands/commands.names';
 import { dispatchEvent } from '../events/event.dispatcher';
 import { EVENTS } from '../events/events.list';
 import { getEventNameFromCommandName } from '../utils/events.utils';
-import { isTerminalEmulatesWriting } from '../utils/commands.utils';
+import {
+    emulateCommandWriting,
+    isTerminalEmulatesWriting,
+} from '../utils/commands.utils';
 
 export const term = new Terminal({
     cursorBlink: true,
-    fontSize: 14,
+    fontSize: 22,
     fontWeight: 400,
-    fontFamily: 'monospace',
+    fontFamily: 'IBM, monospace',
     theme: {
-        background: '#1a1b26',
-        foreground: '#a9b1d6',
+        background: '#35210D',
+        foreground: '#FFAA2A',
         cursor: '#c0caf5',
     },
     convertEol: true,
@@ -61,8 +68,8 @@ window.addEventListener('resize', () => {
 
 // Welcome message
 
-term.write(CURSOR);
-term.write(WELCOME_COMMAND_NAME);
+await emulateCommandWriting(term, CURSOR);
+await emulateCommandWriting(term, WELCOME_COMMAND_NAME);
 
 term.writeln('');
 term.writeln('');
@@ -70,27 +77,31 @@ term.writeln('');
 await COMMAND_HANDLERS[WELCOME_COMMAND_NAME](term);
 
 term.writeln('');
-updateCursor(term);
+await writeCursorWithWritingEmulation(term);
 
 // Prompt handling
 
 term.onData(async (char) => {
     const prompt = getPrompt();
 
-    if (isTerminalEmulatesWriting())
-        return;
-    
+    if (isTerminalEmulatesWriting()) return;
+
     switch (char) {
         case '\u0003': // Ctrl+C
-            term.write('^C');
             term.writeln('');
-            clearPrompt(term);
+            term.write('^C');
+            await clearPrompt(term);
+            term.writeln('');
+            await writeCursorWithWritingEmulation(term);
             break;
         case '\r': // Enter
+            if (prompt.trim() === '') {
+                term.writeln('');
+                await writeCursorWithWritingEmulation(term);
+            }
             await dispatchCommand(term, prompt);
             pushHistoryElement(prompt);
             returnHistoryIndexToStart();
-            clearPrompt(term);
             break;
         case '\u007F': // Backspace (DEL)
             deleteCharFromThePrompt(term);
@@ -98,10 +109,14 @@ term.onData(async (char) => {
         case '\x1b[A': // Arrow Up
             const prevHistoryElement = getPrevHistoryElement();
             setPrompt(term, prevHistoryElement);
+            updateCursor(term);
+            term.write(prevHistoryElement);
             break;
         case '\x1b[B': // Arrow Down
             const nextHistoryElement = getNextHistoryElement();
             setPrompt(term, nextHistoryElement);
+            updateCursor(term);
+            term.write(nextHistoryElement);
             break;
         default: // Print all other characters
             if (
@@ -110,14 +125,9 @@ term.onData(async (char) => {
                 char >= '\u00a0'
             ) {
                 addCharToThePrompt(term, char);
+                term.write(char);
             }
     }
-});
-
-// Registering commands event listeners
-
-Object.entries(EVENTS).forEach(([eventName, event]) => {
-    document.addEventListener(name, () => {});
 });
 
 // Links handling

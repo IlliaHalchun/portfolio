@@ -337,6 +337,42 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@-webkit-keyframes notyf-fadeinup{0%{o
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css ***!
+  \********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/IBM.woff */ "./src/assets/fonts/IBM.woff"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
+    font-family: 'IBM';
+    src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format('woff');
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/fonts.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,2DAAmD;AACvD","sourcesContent":["@font-face {\n    font-family: 'IBM';\n    src: url('../assets/fonts/IBM.woff') format('woff');\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/main.css":
 /*!*******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
@@ -354,14 +390,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_xterm_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./xterm.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/xterm.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_notyf_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./notyf.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/notyf.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_fonts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./fonts.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_5__);
 // Imports
 
 
 
 
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/noise.png */ "./src/assets/noise.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_xterm_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_notyf_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_fonts_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_5___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `*,
 *::after,
@@ -374,30 +418,115 @@ html {
 }
 
 body {
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 20px;
-    background: #1a1b26;
+    padding: 60px 55px;
+    background: #35210d;
 }
 
-.terminal-header {
+.grain-filter {
+    position: absolute;
+    inset: -200%;
+
+    pointer-events: none;
+
+    opacity: 30%;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+    animation: shift 0.7s linear infinite both;
+}
+
+.box-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20vh;
+    height: 100%;
+    z-index: 103;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    pointer-events: none;
+
+    box-shadow: inset 0px 0px 200px -2px rgba(0, 0, 0, 1);
 }
 
-.terminal-header pre {
-    background-image: linear-gradient(red, yellow, #a9b1d6);
-    color: transparent;
-    background-clip: text;
-    text-align: center;
-    margin: 0;
+@keyframes shift {
+    0% {
+        transform: translateX(10%) translateY(10%);
+    }
+    100% {
+        transform: translateX(-10%) translateY(-10%);
+    }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAGA;;;IAGI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,iBAAiB;IACjB,WAAW;IACX,SAAS;IACT,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;;IAEZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,uDAAuD;IACvD,kBAAkB;IAClB,qBAAqB;IACrB,kBAAkB;IAClB,SAAS;AACb","sourcesContent":["@import url('xterm.css');\n@import url('notyf.css');\n\n*,\n*::after,\n*::before {\n    box-sizing: border-box;\n}\n\nhtml {\n    height: 100%;\n}\n\nbody {\n    min-height: 100vh;\n    width: 100%;\n    margin: 0;\n    padding: 20px;\n    background: #1a1b26;\n}\n\n.terminal-header {\n    width: 100%;\n    height: 20vh;\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.terminal-header pre {\n    background-image: linear-gradient(red, yellow, #a9b1d6);\n    color: transparent;\n    background-clip: text;\n    text-align: center;\n    margin: 0;\n}\n"],"sourceRoot":""}]);
+
+.scanlines {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.scanlines:before,
+.scanlines:after {
+    display: block;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+}
+
+.scanlines:before {
+    width: 100%;
+    height: 2px;
+    z-index: 101;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.2) 10%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    opacity: 0.75;
+    animation: scanline 10s linear infinite;
+}
+
+.scanlines:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 102;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 51%
+    );
+    background-size: 100% 4px;
+    animation: scanlines 1s steps(60) infinite;
+}
+
+@keyframes scanline {
+    0% {
+        transform: translate3d(0, 200000%, 0);
+    }
+}
+@keyframes scanlines {
+    0% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes scan {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 -100%;
+    }
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAIA;;;IAGI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,kBAAkB;IAClB,gBAAgB;IAChB,iBAAiB;IACjB,WAAW;IACX,SAAS;IACT,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;IAClB,YAAY;;IAEZ,oBAAoB;;IAEpB,YAAY;IACZ,mDAAsC;IACtC,0CAA0C;AAC9C;;AAEA;IACI,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,WAAW;IACX,YAAY;IACZ,YAAY;;IAEZ,oBAAoB;;IAEpB,qDAAqD;AACzD;;AAEA;IACI;QACI,0CAA0C;IAC9C;IACA;QACI,4CAA4C;IAChD;AACJ;;AAEA;IACI,gBAAgB;IAChB,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,WAAW;IACX,YAAY;IACZ,oBAAoB;AACxB;;AAEA;;IAEI,cAAc;IACd,oBAAoB;IACpB,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,WAAW;IACX,YAAY;IACZ;;;;;KAKC;IACD,aAAa;IACb,uCAAuC;AAC3C;;AAEA;IACI,MAAM;IACN,QAAQ;IACR,SAAS;IACT,OAAO;IACP,YAAY;IACZ;;;;KAIC;IACD,yBAAyB;IACzB,0CAA0C;AAC9C;;AAEA;IACI;QACI,qCAAqC;IACzC;AACJ;AACA;IACI;QACI,0BAA0B;IAC9B;AACJ;;AAEA;IACI;QACI,2BAA2B;IAC/B;IACA;QACI,4BAA4B;IAChC;AACJ","sourcesContent":["@import url('xterm.css');\n@import url('notyf.css');\n@import url('fonts.css');\n\n*,\n*::after,\n*::before {\n    box-sizing: border-box;\n}\n\nhtml {\n    height: 100%;\n}\n\nbody {\n    position: relative;\n    overflow: hidden;\n    min-height: 100vh;\n    width: 100%;\n    margin: 0;\n    padding: 60px 55px;\n    background: #35210d;\n}\n\n.grain-filter {\n    position: absolute;\n    inset: -200%;\n\n    pointer-events: none;\n\n    opacity: 30%;\n    background: url('../assets/noise.png');\n    animation: shift 0.7s linear infinite both;\n}\n\n.box-shadow {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 103;\n\n    pointer-events: none;\n\n    box-shadow: inset 0px 0px 200px -2px rgba(0, 0, 0, 1);\n}\n\n@keyframes shift {\n    0% {\n        transform: translateX(10%) translateY(10%);\n    }\n    100% {\n        transform: translateX(-10%) translateY(-10%);\n    }\n}\n\n.scanlines {\n    overflow: hidden;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n}\n\n.scanlines:before,\n.scanlines:after {\n    display: block;\n    pointer-events: none;\n    content: '';\n    position: absolute;\n}\n\n.scanlines:before {\n    width: 100%;\n    height: 2px;\n    z-index: 101;\n    background: linear-gradient(\n        0deg,\n        rgba(0, 0, 0, 0) 0%,\n        rgba(255, 255, 255, 0.2) 10%,\n        rgba(0, 0, 0, 0.1) 100%\n    );\n    opacity: 0.75;\n    animation: scanline 10s linear infinite;\n}\n\n.scanlines:after {\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 102;\n    background: linear-gradient(\n        to bottom,\n        transparent 50%,\n        rgba(0, 0, 0, 0.3) 51%\n    );\n    background-size: 100% 4px;\n    animation: scanlines 1s steps(60) infinite;\n}\n\n@keyframes scanline {\n    0% {\n        transform: translate3d(0, 200000%, 0);\n    }\n}\n@keyframes scanlines {\n    0% {\n        background-position: 0 50%;\n    }\n}\n\n@keyframes scan {\n    0% {\n        background-position: 0 100%;\n    }\n    100% {\n        background-position: 0 -100%;\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -425,25 +554,32 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.notyf {
-    font-family: monospace;
-    font-size: 14px;
+    font-family: 'IBM', monospace;
+    font-size: 22px;
+    z-index: 100;
+    filter: blur(1px);
 }
 
 .notyf .notyf-info {
-    background-color: #333333;
-    color: white;
+    background-color: #cec9b5;
+    color: black;
+}
+
+.notyf__wrapper {
+    padding-right: 0 !important;
 }
 
 .notyf .notyf__message button {
-    background: #a9b1d6;
+    font-size: inherit;
+    background: #ffaa2a;
     color: black;
     cursor: pointer;
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
     border: none;
     outline: none;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/notyf.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,eAAe;AACnB;;AAEA;IACI,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,mBAAmB;IACnB,YAAY;IACZ,eAAe;IACf,SAAS;IACT,UAAU;IACV,YAAY;IACZ,aAAa;AACjB","sourcesContent":[".notyf {\n    font-family: monospace;\n    font-size: 14px;\n}\n\n.notyf .notyf-info {\n    background-color: #333333;\n    color: white;\n}\n\n.notyf .notyf__message button {\n    background: #a9b1d6;\n    color: black;\n    cursor: pointer;\n    margin: 0;\n    padding: 0;\n    border: none;\n    outline: none;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/notyf.css"],"names":[],"mappings":"AAAA;IACI,6BAA6B;IAC7B,eAAe;IACf,YAAY;IACZ,iBAAiB;AACrB;;AAEA;IACI,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,2BAA2B;AAC/B;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;IACZ,eAAe;IACf,SAAS;IACT,cAAc;IACd,YAAY;IACZ,aAAa;AACjB","sourcesContent":[".notyf {\n    font-family: 'IBM', monospace;\n    font-size: 22px;\n    z-index: 100;\n    filter: blur(1px);\n}\n\n.notyf .notyf-info {\n    background-color: #cec9b5;\n    color: black;\n}\n\n.notyf__wrapper {\n    padding-right: 0 !important;\n}\n\n.notyf .notyf__message button {\n    font-size: inherit;\n    background: #ffaa2a;\n    color: black;\n    cursor: pointer;\n    margin: 0;\n    padding: 0 5px;\n    border: none;\n    outline: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -471,13 +607,17 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `#xterm-wrapper {
-    height: calc(80vh - 40px);
+    height: calc(100vh - 120px);
 }
 
 .xterm-viewport {
     overflow-y: hidden !important;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/xterm.css"],"names":[],"mappings":"AAAA;IACI,yBAAyB;AAC7B;;AAEA;IACI,6BAA6B;AACjC","sourcesContent":["#xterm-wrapper {\n    height: calc(80vh - 40px);\n}\n\n.xterm-viewport {\n    overflow-y: hidden !important;\n}\n"],"sourceRoot":""}]);
+
+.xterm-rows {
+    filter: blur(1px);
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/xterm.css"],"names":[],"mappings":"AAAA;IACI,2BAA2B;AAC/B;;AAEA;IACI,6BAA6B;AACjC;;AAEA;IACI,iBAAiB;AACrB","sourcesContent":["#xterm-wrapper {\n    height: calc(100vh - 120px);\n}\n\n.xterm-viewport {\n    overflow-y: hidden !important;\n}\n\n.xterm-rows {\n    filter: blur(1px);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -575,6 +715,42 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -1541,6 +1717,28 @@ const stringIndexToBufferPosition = (terminal, lineIndex, stringIndex, reportLas
 
 /***/ }),
 
+/***/ "./src/assets/fonts/IBM.woff":
+/*!***********************************!*\
+  !*** ./src/assets/fonts/IBM.woff ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "8954d8dac4bf5506d4ac.woff";
+
+/***/ }),
+
+/***/ "./src/assets/noise.png":
+/*!******************************!*\
+  !*** ./src/assets/noise.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "1c007019913c38fae526.png";
+
+/***/ }),
+
 /***/ "./src/commands/about.command-handler.js":
 /*!***********************************************!*\
   !*** ./src/commands/about.command-handler.js ***!
@@ -1558,7 +1756,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var ABOUT_MESSAGE = "\x1B[1;33mAbout Me\x1B[1;36m\n\n\x1B[1;34mExperienced Full Stack Developer with over 4 years of success in developing complex projects across diverse industries.\x1B[0m\n\n\x1B[1;33mWhat I Do:\x1B[0m\n\nI specialize in architecting end-to-end solutions that:\n\n\x1B[1;32m\u2022 Enhance efficiency\n\u2022 Streamline operations\n\u2022 Deliver impactful results\x1B[0m\n\n\x1B[1;33mTechnical Expertise:\x1B[0m\n\n\x1B[1;32m\u2022 Next.js, Nest.js, Node.js\n\u2022 TypeScript, JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;33mBeyond Coding:\x1B[0m\n\nPassionate about mentoring, terminal customization, and DevOps practices. Skilled in agile methodologies, best practices, and delivering scalable, user-focused solutions.\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var ABOUT_MESSAGE = "About Me\n\nExperienced Full Stack Developer with over 4 years of success in developing complex projects across diverse industries.\n\nWhat I Do:\n\nI specialize in architecting end-to-end solutions that:\n\n\u2022 Enhance efficiency\n\u2022 Streamline operations\n\u2022 Deliver impactful results\n\nTechnical Expertise:\n\n\u2022 Next.js, Nest.js, Node.js\n\u2022 TypeScript, JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\n\nBeyond Coding:\n\nPassionate about mentoring, terminal customization, and DevOps practices. Skilled in agile methodologies, best practices, and delivering scalable, user-focused solutions.\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var aboutCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -1647,10 +1845,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/cursor.utils */ "./src/utils/cursor.utils.js");
 /* harmony import */ var _commands_handlers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands.handlers */ "./src/commands/commands.handlers.js");
-/* harmony import */ var _commands_names__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commands.names */ "./src/commands/commands.names.js");
-/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
-/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
-/* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
+/* harmony import */ var _utils_commands_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/commands.utils */ "./src/utils/commands.utils.js");
+/* harmony import */ var _state_prompt_state__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../state/prompt.state */ "./src/state/prompt.state.js");
+/* harmony import */ var _commands_names__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./commands.names */ "./src/commands/commands.names.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function _toArray(r) { return _arrayWithHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableRest(); }
@@ -1661,6 +1861,8 @@ function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Sym
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+
+
 
 
 
@@ -1686,25 +1888,30 @@ var dispatchCommand = /*#__PURE__*/function () {
             _context.next = 11;
             break;
           }
-          (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_4__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_5__.CLOSE_ALL_TOASTS_EVENT_NAME]);
+          (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_3__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_4__.CLOSE_ALL_TOASTS_EVENT_NAME]);
           _context.next = 9;
           return _commands_handlers__WEBPACK_IMPORTED_MODULE_1__.COMMAND_HANDLERS[command](term, parameters.join(' '));
         case 9:
-          _context.next = 12;
+          _context.next = 13;
           break;
         case 11:
-          term.write("".concat(command, ": command not found"));
-        case 12:
-          if (!(command === _commands_names__WEBPACK_IMPORTED_MODULE_2__.CLEAR_COMMAND_NAME)) {
-            _context.next = 15;
+          _context.next = 13;
+          return (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_5__.emulateCommandWriting)(term, "".concat(command, ": command not found"));
+        case 13:
+          (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_6__.clearPrompt)();
+          if (!(command === _commands_names__WEBPACK_IMPORTED_MODULE_7__.CLEAR_COMMAND_NAME)) {
+            _context.next = 18;
             break;
           }
-          (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
-          return _context.abrupt("return");
-        case 15:
-          term.writeln('');
-          (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.updateCursor)(term);
+          _context.next = 17;
+          return (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.writeCursorWithWritingEmulation)(term);
         case 17:
+          return _context.abrupt("return");
+        case 18:
+          term.writeln('');
+          _context.next = 21;
+          return (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.writeCursorWithWritingEmulation)(term);
+        case 21:
         case "end":
           return _context.stop();
       }
@@ -1808,7 +2015,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var CONTACT_MESSAGE = "\x1B[1;33mContact Me\x1B[1;36m\n\n\x1B[1;34mThank you for visiting my interactive portfolio!\x1B[0m\n\x1B[1;33mFeel free to reach out to me via the following methods:\x1B[0m\n\n\x1B[1;32mEmail:\x1B[0m \x1B[1;37mgsv19782000@gmail.com\x1B[0m\n\x1B[1;32mPhone:\x1B[0m \x1B[1;37m+48574949097\x1B[0m\n\x1B[1;32mGitHub:\x1B[0m \x1B[1;37mhttps://github.com/illiahalchun\x1B[0m\n\x1B[1;32mLinkedIn:\x1B[0m \x1B[1;37mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1B[0m\n\n\x1B[1;33mLooking forward to connecting with you!\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var CONTACT_MESSAGE = "Contact Me\n\nThank you for visiting my interactive portfolio!\n\nFeel free to reach out to me via the following methods:\n\nEmail: gsv19782000@gmail.com\n\nPhone: +48574949097\n\nGitHub: \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://github.com/illiahalchun\x1B[0m\n\nLinkedIn: \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1B[0m\n\nLooking forward to connecting with you!\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var contactCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -1846,7 +2053,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var EDUCATION_MESSAGE = "\x1B[1;33mEducation\x1B[0m\n\n\x1B[1;36mInstitution:\x1B[0m Open Source Society University\n\x1B[1;36mDegree:\x1B[0m Computer Science\n\x1B[1;36mYears:\x1B[0m 2018 - 2022\n\n\x1B[1;34mThis program followed a structured curriculum inspired by top universities, covering core computer science principles, software development, and problem-solving skills.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var EDUCATION_MESSAGE = "Education\n\nInstitution: Open Source Society University\n\nDegree: Computer Science\n\nYears: 2018 - 2022\n\nThis program followed a structured curriculum inspired by top universities, covering core computer science principles, software development, and problem-solving skills.\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var educationCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -1884,7 +2091,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var EXPERIENCE_MESSAGE = "\x1B[1;33mProfessional Experience\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDD39 RavenDB | Internal System | CRM Systems\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Mar 2023 - Present\x1B[0m\n\x1B[1;37mAs a Full Stack Developer, I contributed to designing and implementing an internal sales system with CRM-like features, streamlining operations and enhancing user experiences.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Implemented CRM features like customer tracking and lead management, improving efficiency by 7%.\n\u2714 Optimized database queries, reducing sales report processing time by 15%.\n\u2714 Contributed to agile development cycles, delivering high-quality updates on strict timelines.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 MafiaHub | Social Web\x1B[0m\n\x1B[1;32mPosition: CEO & Sole Developer | May 2022 - Present\x1B[0m\n\x1B[1;37mDeveloping a web application that digitizes the Mafia tabletop game, providing game history tracking, turn recording, and detailed player statistics.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Built a CI/CD pipeline for automated builds, testing, and deployment.\n\u2714 Implemented core game mechanics, including game setup, turn tracking, and data storage.\n\u2714 Created containerized development environments for seamless builds.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Food Delivery App | Food & Beverage\x1B[0m\n\x1B[1;32mPosition: Full-Stack Engineer | Feb 2021 - Feb 2023\x1B[0m\n\x1B[1;37mDeveloped a comprehensive food delivery application to enhance interactions between users, restaurants, and delivery partners.\x1B[0m\n\n\x1B[1;33mKey Achievements:\x1B[0m\n\x1B[1;32m\u2714 Designed a modular backend with Nest.js for scalable feature development.\n\u2714 Implemented server-side rendering (SSR) with Next.js for improved SEO and performance.\n\u2714 Built real-time order status updates and delivery tracking for better user engagement.\x1B[0m\n\n\x1B[1;34m\uD83D\uDD39 Sigma Software Group | Internship | E-commerce\x1B[0m\n\x1B[1;32mPosition: Intern | Jun 2020 - Feb 2021\x1B[0m\n\x1B[1;37mGained hands-on experience in e-commerce solutions and full-stack development practices.\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to explore available commands.";
+var EXPERIENCE_MESSAGE = "Professional Experience\n\n\u2022 RavenDB | Internal System | CRM Systems\n\nPosition: Full-Stack Engineer | Mar 2023 - Present\n\nAs a Full Stack Developer, I contributed to designing and implementing an internal sales system with CRM-like features, streamlining operations and enhancing user experiences.\n\nKey Achievements:\n\n\u2714  Implemented CRM features like customer tracking and lead management, improving efficiency by 7%.\n\u2714  Optimized database queries, reducing sales report processing time by 15%.\n\u2714  Contributed to agile development cycles, delivering high-quality updates on strict timelines.\n\n\u2022 MafiaHub | Social Web\n\nPosition: CEO & Sole Developer | May 2022 - Present\n\nDeveloping a web application that digitizes the Mafia tabletop game, providing game history tracking, turn recording, and detailed player statistics.\n\nKey Achievements:\n\n\u2714  Built a CI/CD pipeline for automated builds, testing, and deployment.\n\u2714  Implemented core game mechanics, including game setup, turn tracking, and data storage.\n\u2714  Created containerized development environments for seamless builds.\n\n\u2022 Sigma Software Group | Food Delivery App | Food & Beverage\n\nPosition: Full-Stack Engineer | Feb 2021 - Feb 2023\n\nDeveloped a comprehensive food delivery application to enhance interactions between users, restaurants, and delivery partners.\n\nKey Achievements:\n\n\u2714  Designed a modular backend with Nest.js for scalable feature development.\n\u2714  Implemented server-side rendering (SSR) with Next.js for improved SEO and performance.\n\u2714  Built real-time order status updates and delivery tracking for better user engagement.\n\n\u2022 Sigma Software Group | Internship | E-commerce\n\nPosition: Intern | Jun 2020 - Feb 2021\n\nGained hands-on experience in e-commerce solutions and full-stack development practices.\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to explore available commands.";
 var experienceCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -1924,7 +2131,7 @@ function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
 
-var HELP_MESSAGE = "\x1B[1;33mHelp Menu\x1B[1;36m\n\n\x1B[1;34mHere\u2019s a list of available commands to navigate this terminal portfolio.\x1B[0m\n\n\x1B[1;32m\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[welcome]\x1B[0m    - ".concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_DESCRIPTION, "\n\nclear        - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m       - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_DESCRIPTION, "\n\n\x1B[1;32m\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[projects]\x1B[0m   - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[about]\x1B[0m      - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[skills]\x1B[0m     - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[experience]\x1B[0m - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[education]\x1B[0m  - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_DESCRIPTION, "\x1B[0m\n\n\x1B[1;32m\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\x1B[0m\n\n\x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[contact]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_DESCRIPTION, "\n\n\x1B[1;34mType or click a command to begin exploring.\x1B[0m");
+var HELP_MESSAGE = "Help Menu\n\nHere\u2019s a list of available commands to navigate this terminal portfolio.\n\n\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[welcome]\x1B[0m    - ".concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_DESCRIPTION, "\n\nclear        - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m       - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[projects]\x1B[0m   - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[about]\x1B[0m      - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[skills]\x1B[0m     - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[experience]\x1B[0m - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[education]\x1B[0m  - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[contact]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_DESCRIPTION, "\n\nType or click a command to begin exploring.");
 var helpCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2004,17 +2211,19 @@ var illiasayCommandHandler = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           if (!(message.trim().length === 0)) {
-            _context.next = 3;
+            _context.next = 4;
             break;
           }
-          term.write('Please specify illiasay message');
-          return _context.abrupt("return");
+          _context.next = 3;
+          return (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__.emulateCommandWriting)(term, 'Please specify illiasay message');
         case 3:
+          return _context.abrupt("return");
+        case 4:
           speechBubble = buildSpeechBubble(message);
           output = "".concat(ILLIA_PORTRAIT, "\n").concat(speechBubble);
-          _context.next = 7;
+          _context.next = 8;
           return (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__.emulateCommandWriting)(term, output);
-        case 7:
+        case 8:
         case "end":
           return _context.stop();
       }
@@ -2044,7 +2253,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var PROJECTS_MESSAGE = "\x1B[1;33mProjects Showcase\x1B[0m\n\n\x1B[1;34m1. Tarcza dla Ukrainy\x1B[0m - \x1B[1;36mhttps://tarczadlaukrainy.pl\x1B[0m\n   \x1B[1;32mSocial Help Project\x1B[0m - Supports Ukrainian soldiers and civilians affected by war.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n\x1B[1;34m2. Artist Portfolio\x1B[0m - \x1B[1;36mhttps://anastasiia-tereshchenko.art\x1B[0m\n   \x1B[1;32mCustom Admin & Art Showcase\x1B[0m - A digital portfolio for an artist to showcase and manage paintings.\n   \x1B[1;33mTech Stack:\x1B[0m\n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var PROJECTS_MESSAGE = "Projects Showcase\n\n1. Tarcza dla Ukrainy - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://tarczadlaukrainy.pl\x1B[0m\n\n   Social Help Project - Supports Ukrainian soldiers and civilians affected by war.\n   \n   Tech Stack:\n   \n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n2. Artist Portfolio - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://anastasiia-tereshchenko.art\x1B[0m\n\n   Custom Admin & Art Showcase - A digital portfolio for an artist to showcase and manage paintings.\n   \n   Tech Stack:\n   \n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var projectsCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2082,7 +2291,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var SKILLS_MESSAGE = "\x1B[1;33mTechnical Skills\x1B[1;36m\n\n\x1B[1;34m\uD83D\uDE80  Frontend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: JavaScript, TypeScript, Rust/WASM\n\u2022 React Stack: React, Next.js, Redux, Zustand, Jest, React Testing Library, Storybook\n\u2022 Layout: HTML, CSS, Gulp, SASS, LESS, SCCS, Tailwind\x1B[0m\n\n\x1B[1;34m\uD83D\uDDA5\uFE0F  Backend Development\x1B[0m\n\n\x1B[1;32m\u2022 Languages: Node.js, C#, Rust\n\u2022 Frameworks: Express.js, Nest.js, .NET, Gotham, Serverless Framework\n\u2022 APIs: REST, GraphQL, gRPC\n\u2022 Databases: MongoDB, PostgreSQL, RavenDB\x1B[0m\n\n\x1B[1;34m\uD83D\uDEE0\uFE0F  DevOps & Infrastructure\x1B[0m\n\n\x1B[1;32m\u2022 Docker, Nginx, Apache, RabbitMQ, Redis, CI/CD\n\u2022 Swagger, Postman, AWS, Terraform, Ansible\x1B[0m\n\n\x1B[1;34m\uD83D\uDCC2  Project Management & Tools\x1B[0m\n\n\x1B[1;32m\u2022 Git, GitHub, Bitbucket\n\u2022 Jira, Confluence, Trello, Slack, ClickUp\n\u2022 Agile Methodologies: SCRUM, Kanban\x1B[0m\n\n\x1B[1;34m\uD83D\uDCDA  Software Architecture & Best Practices\x1B[0m\n\n\x1B[1;32m\u2022 Web/Design Patterns, System Design\n\u2022 SOLID, KISS, DRY, Microservices Architecture\x1B[0m\n\n\x1B[1;34m\uD83C\uDFA8  Others\x1B[0m\n\n\x1B[1;32m\u2022 Figma, DrawIO, Strapi\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var SKILLS_MESSAGE = "Technical Skills\n\n\uD83D\uDE80  Frontend Development\n\n\u2022 Languages: JavaScript, TypeScript, Rust/WASM\n\u2022 React Stack: React, Next.js, Redux, Zustand, Jest, React Testing Library, Storybook\n\u2022 Layout: HTML, CSS, Gulp, SASS, LESS, SCCS, Tailwind\n\n\uD83D\uDDA5\uFE0F  Backend Development\n\n\u2022 Languages: Node.js, C#, Rust\n\u2022 Frameworks: Express.js, Nest.js, .NET, Gotham, Serverless Framework\n\u2022 APIs: REST, GraphQL, gRPC\n\n\u2022 Databases: MongoDB, PostgreSQL, RavenDB\n\n\uD83D\uDEE0\uFE0F  DevOps & Infrastructure\n\n\u2022 Docker, Nginx, Apache, RabbitMQ, Redis, CI/CD\n\u2022 Swagger, Postman, AWS, Terraform, Ansible\n\n\uD83D\uDCC2  Project Management & Tools\n\n\u2022 Git, GitHub, Bitbucket\n\u2022 Jira, Confluence, Trello, Slack, ClickUp\n\u2022 Agile Methodologies: SCRUM, Kanban\n\n\uD83D\uDCDA  Software Architecture & Best Practices\n\n\u2022 Web/Design Patterns, System Design\n\u2022 SOLID, KISS, DRY, Microservices Architecture\n\n\uD83C\uDFA8  Others\n\n\u2022 Figma, DrawIO, Strapi\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var skillsCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2120,7 +2329,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var WELCOME_MESSAGE = "\x1B[1;33mWelcome to my interactive terminal portfolio!\x1B[1;36m\n\n\x1B[1;34mThis is a unique space where you can explore my work, experience, and skills through a terminal interface.\x1B[0m\n\n\x1B[1;33mAbout Me:\x1B[0m\n\nI am Illia Halchun, a full-stack software developer with expertise in modern web technologies.\nI specialize in building high-performance applications using:\n\n\x1B[1;32m\u2022 Next.js, Nest.js and Node.js\n\u2022 TypeScript and JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\x1B[0m\n\n\x1B[1;34mEnjoy your stay and have fun exploring my work!\x1B[0m\n\n\x1B[1;33mNeed Guidance?\x1B[0m\n\nType or click \x1B[1m\x1B[48;2;169;177;214m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands and start exploring.";
+var WELCOME_MESSAGE = "Welcome to my interactive terminal portfolio!\n\nThis is a unique space where you can explore my work, experience, and skills through a terminal interface.\n\nAbout Me:\n\nI am Illia Halchun, a full-stack software developer with expertise in modern web technologies.\n\nI specialize in building high-performance applications using:\n\n\u2022 Next.js, Nest.js and Node.js\n\u2022 TypeScript and JavaScript\n\u2022 C# and .NET\n\u2022 React for front-end development\n\nEnjoy your stay and have fun exploring my work!\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands and start exploring.";
 var welcomeCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term, afterCommand) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2169,8 +2378,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   dispatchEvent: () => (/* binding */ dispatchEvent)
 /* harmony export */ });
+/* harmony import */ var _utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/commands.utils */ "./src/utils/commands.utils.js");
+
 var dispatchEvent = function dispatchEvent(event) {
-  return document.dispatchEvent(event);
+  if ((0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__.isTerminalEmulatesWriting)() === false) document.dispatchEvent(event);
 };
 
 /***/ }),
@@ -2341,6 +2552,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
 /* harmony import */ var _events_events_handlers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../events/events.handlers */ "./src/events/events.handlers.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_events_events_handlers__WEBPACK_IMPORTED_MODULE_1__]);
 _events_events_handlers__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -2351,12 +2563,14 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
+
 Object.entries(_events_events_list__WEBPACK_IMPORTED_MODULE_0__.EVENTS).forEach(function (_ref) {
   var _ref2 = _slicedToArray(_ref, 2),
     name = _ref2[0],
     _ = _ref2[1];
   document.addEventListener(name, _events_events_handlers__WEBPACK_IMPORTED_MODULE_1__.EVENT_HANDLERS[name]);
 });
+document.customDispatchEvent = _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__.dispatchEvent;
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
 
@@ -2383,8 +2597,9 @@ var notyf = new notyf__WEBPACK_IMPORTED_MODULE_0__.Notyf({
   types: [{
     type: 'info',
     icon: false,
-    dismissible: true,
-    className: 'notyf-info'
+    dismissible: false,
+    className: 'notyf-info',
+    ripple: false
   }]
 });
 
@@ -2420,12 +2635,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_events_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/events.utils */ "./src/utils/events.utils.js");
 /* harmony import */ var _utils_commands_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/commands.utils */ "./src/utils/commands.utils.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
@@ -2445,12 +2654,12 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 var term = new _xterm_xterm_lib_xterm_js__WEBPACK_IMPORTED_MODULE_0__.Terminal({
   cursorBlink: true,
-  fontSize: 14,
+  fontSize: 22,
   fontWeight: 400,
-  fontFamily: 'monospace',
+  fontFamily: 'IBM, monospace',
   theme: {
-    background: '#1a1b26',
-    foreground: '#a9b1d6',
+    background: '#35210D',
+    foreground: '#FFAA2A',
     cursor: '#c0caf5'
   },
   convertEol: true,
@@ -2476,13 +2685,13 @@ window.addEventListener('resize', function () {
 
 // Welcome message
 
-term.write(_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.CURSOR);
-term.write(_commands_commands_names__WEBPACK_IMPORTED_MODULE_9__.WELCOME_COMMAND_NAME);
+await (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_13__.emulateCommandWriting)(term, _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.CURSOR);
+await (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_13__.emulateCommandWriting)(term, _commands_commands_names__WEBPACK_IMPORTED_MODULE_9__.WELCOME_COMMAND_NAME);
 term.writeln('');
 term.writeln('');
 await _commands_commands_handlers__WEBPACK_IMPORTED_MODULE_7__.COMMAND_HANDLERS[_commands_commands_names__WEBPACK_IMPORTED_MODULE_9__.WELCOME_COMMAND_NAME](term);
 term.writeln('');
-(0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
+await (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.writeCursorWithWritingEmulation)(term);
 
 // Prompt handling
 
@@ -2500,42 +2709,60 @@ term.onData(/*#__PURE__*/function () {
           return _context.abrupt("return");
         case 3:
           _context.t0 = _char;
-          _context.next = _context.t0 === "\x03" ? 6 : _context.t0 === '\r' ? 10 : _context.t0 === "\x7F" ? 16 : _context.t0 === '\x1b[A' ? 18 : _context.t0 === '\x1b[B' ? 21 : 24;
+          _context.next = _context.t0 === "\x03" ? 6 : _context.t0 === '\r' ? 14 : _context.t0 === "\x7F" ? 23 : _context.t0 === '\x1b[A' ? 25 : _context.t0 === '\x1b[B' ? 30 : 35;
           break;
         case 6:
           // Ctrl+C
-          term.write('^C');
           term.writeln('');
-          (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
-          return _context.abrupt("break", 25);
+          term.write('^C');
+          _context.next = 10;
+          return (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
         case 10:
-          _context.next = 12;
+          term.writeln('');
+          _context.next = 13;
+          return (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.writeCursorWithWritingEmulation)(term);
+        case 13:
+          return _context.abrupt("break", 36);
+        case 14:
+          if (!(prompt.trim() === '')) {
+            _context.next = 18;
+            break;
+          }
+          term.writeln('');
+          _context.next = 18;
+          return (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.writeCursorWithWritingEmulation)(term);
+        case 18:
+          _context.next = 20;
           return (0,_commands_commands_dispatcher__WEBPACK_IMPORTED_MODULE_6__.dispatchCommand)(term, prompt);
-        case 12:
+        case 20:
           (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.pushHistoryElement)(prompt);
           (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.returnHistoryIndexToStart)();
-          (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.clearPrompt)(term);
-          return _context.abrupt("break", 25);
-        case 16:
+          return _context.abrupt("break", 36);
+        case 23:
           // Backspace (DEL)
           (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.deleteCharFromThePrompt)(term);
-          return _context.abrupt("break", 25);
-        case 18:
+          return _context.abrupt("break", 36);
+        case 25:
           // Arrow Up
           prevHistoryElement = (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.getPrevHistoryElement)();
           (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, prevHistoryElement);
-          return _context.abrupt("break", 25);
-        case 21:
+          (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
+          term.write(prevHistoryElement);
+          return _context.abrupt("break", 36);
+        case 30:
           // Arrow Down
           nextHistoryElement = (0,_state_history_state__WEBPACK_IMPORTED_MODULE_8__.getNextHistoryElement)();
           (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.setPrompt)(term, nextHistoryElement);
-          return _context.abrupt("break", 25);
-        case 24:
+          (0,_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_5__.updateCursor)(term);
+          term.write(nextHistoryElement);
+          return _context.abrupt("break", 36);
+        case 35:
           // Print all other characters
           if (_char >= String.fromCharCode(0x20) && _char <= String.fromCharCode(0x7e) || _char >= "\xA0") {
             (0,_state_prompt_state__WEBPACK_IMPORTED_MODULE_2__.addCharToThePrompt)(term, _char);
+            term.write(_char);
           }
-        case 25:
+        case 36:
         case "end":
           return _context.stop();
       }
@@ -2545,15 +2772,6 @@ term.onData(/*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }());
-
-// Registering commands event listeners
-
-Object.entries(_events_events_list__WEBPACK_IMPORTED_MODULE_11__.EVENTS).forEach(function (_ref2) {
-  var _ref3 = _slicedToArray(_ref2, 2),
-    eventName = _ref3[0],
-    event = _ref3[1];
-  document.addEventListener(name, function () {});
-});
 
 // Links handling
 
@@ -2583,8 +2801,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   returnHistoryIndexToStart: () => (/* binding */ returnHistoryIndexToStart)
 /* harmony export */ });
 var history = [];
-var currentIndex = 0;
+var currentIndex = -1;
 var pushHistoryElement = function pushHistoryElement(command) {
+  if (command.trim() === '') return;
   history.push(command);
   currentIndex = history.length;
 };
@@ -2592,15 +2811,21 @@ var returnHistoryIndexToStart = function returnHistoryIndexToStart() {
   currentIndex = history.length;
 };
 var getPrevHistoryElement = function getPrevHistoryElement() {
-  if (currentIndex === 0) return '';
-  currentIndex -= 1;
-  return history[currentIndex];
+  if (history.length === 0) return '';
+  if (currentIndex > 0) {
+    currentIndex -= 1;
+    return history[currentIndex];
+  }
+  return history[0];
 };
 var getNextHistoryElement = function getNextHistoryElement() {
-  if (currentIndex === history.length) return '';
   if (history.length === 0) return '';
-  currentIndex += 1;
-  return history[currentIndex - 1];
+  if (currentIndex < history.length - 1) {
+    currentIndex += 1;
+    return history[currentIndex];
+  }
+  currentIndex = history.length;
+  return '';
 };
 
 /***/ }),
@@ -2625,7 +2850,6 @@ __webpack_require__.r(__webpack_exports__);
 var prompt = '';
 var addCharToThePrompt = function addCharToThePrompt(term, _char) {
   prompt += _char;
-  term.write(_char);
 };
 var deleteCharFromThePrompt = function deleteCharFromThePrompt(term) {
   if (term._core.buffer.x > _utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.CURSOR.length) {
@@ -2636,13 +2860,9 @@ var deleteCharFromThePrompt = function deleteCharFromThePrompt(term) {
   }
 };
 var setPrompt = function setPrompt(term, value) {
-  clearPrompt(term);
   prompt = value;
-  term.write(prompt);
 };
-var clearPrompt = function clearPrompt(term) {
-  term.write('\x1b[2K\r');
-  term.write("".concat(_utils_cursor_utils__WEBPACK_IMPORTED_MODULE_0__.CURSOR));
+var clearPrompt = function clearPrompt() {
   prompt = '';
 };
 var getPrompt = function getPrompt() {
@@ -2723,30 +2943,7 @@ var showClearToast = function showClearToast() {
   _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.notyf.open({
     type: 'info',
     duration: _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.INFINITY_DURATION,
-    message: "Type or click <button onclick=\"document.dispatchEvent(new Event('".concat(_events_events_names__WEBPACK_IMPORTED_MODULE_1__.HELP_EVENT_NAME, "'))\"><strong>[help]</strong></button> to see the list of available commands. ")
-  });
-};
-
-/***/ }),
-
-/***/ "./src/tooltips/scrollable.tooltip.js":
-/*!********************************************!*\
-  !*** ./src/tooltips/scrollable.tooltip.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   showScrollableToast: () => (/* binding */ showScrollableToast)
-/* harmony export */ });
-/* harmony import */ var _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/notyf.module */ "./src/modules/notyf.module.js");
-
-var showScrollableToast = function showScrollableToast() {
-  _modules_notyf_module__WEBPACK_IMPORTED_MODULE_0__.notyf.open({
-    type: 'info',
-    duration: 3 * 1000,
-    message: "Content in the terminal can be scrolled down."
+    message: "Type or click <button onclick=\"document.customDispatchEvent(new Event('".concat(_events_events_names__WEBPACK_IMPORTED_MODULE_1__.HELP_EVENT_NAME, "'))\"><strong>[help]</strong></button> to see the list of available commands. ")
   });
 };
 
@@ -2768,7 +2965,7 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-var WRITING_DELAY = 10;
+var WRITING_DELAY = 30;
 var isTerminalWrites = false;
 var emulateCommandWriting = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term, text) {
@@ -2778,7 +2975,7 @@ var emulateCommandWriting = /*#__PURE__*/function () {
           return _context.abrupt("return", new Promise(function (res) {
             isTerminalWrites = true;
             var alreadyWrittenDelay = 0;
-            text.split("").forEach(function (_char, index) {
+            text.split('').forEach(function (_char, index) {
               var WRITING_RANDOM_FACTOR = Math.random();
               var computedDelay = WRITING_DELAY * WRITING_RANDOM_FACTOR;
               setTimeout(function () {
@@ -2817,14 +3014,34 @@ var isTerminalEmulatesWriting = function isTerminalEmulatesWriting() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CURSOR: () => (/* binding */ CURSOR),
-/* harmony export */   clearPrompt: () => (/* binding */ clearPrompt),
-/* harmony export */   updateCursor: () => (/* binding */ updateCursor)
+/* harmony export */   updateCursor: () => (/* binding */ updateCursor),
+/* harmony export */   writeCursorWithWritingEmulation: () => (/* binding */ writeCursorWithWritingEmulation)
 /* harmony export */ });
-var CURSOR = '> ';
+/* harmony import */ var _commands_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands.utils */ "./src/utils/commands.utils.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+
+var CURSOR = 'illia-halchun-term git:(main) -> ';
+var writeCursorWithWritingEmulation = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return (0,_commands_utils__WEBPACK_IMPORTED_MODULE_0__.emulateCommandWriting)(term, "\r\n".concat(CURSOR));
+        case 2:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function writeCursorWithWritingEmulation(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
 var updateCursor = function updateCursor(term) {
-  term.write("\r\n".concat(CURSOR));
-};
-var clearPrompt = function clearPrompt(term) {
   term.write('\x1b[2K\r');
   term.write("".concat(CURSOR));
 };
@@ -2845,9 +3062,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _events_events_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../events/events.names */ "./src/events/events.names.js");
 /* harmony import */ var _cursor_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cursor.utils */ "./src/utils/cursor.utils.js");
-/* harmony import */ var _tooltips_scrollable_tooltip__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tooltips/scrollable.tooltip */ "./src/tooltips/scrollable.tooltip.js");
-/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
-/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../events/event.dispatcher */ "./src/events/event.dispatcher.js");
+/* harmony import */ var _events_events_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../events/events.list */ "./src/events/events.list.js");
+/* harmony import */ var _commands_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./commands.utils */ "./src/utils/commands.utils.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
@@ -2861,28 +3078,24 @@ var getEventNameFromCommandName = function getEventNameFromCommandName(commandNa
   return commandName + "-".concat(_events_events_names__WEBPACK_IMPORTED_MODULE_0__.EVENT_NAME_SUFFIX);
 };
 var convertCommandHandlerToEventHandler = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term, command, commandName) {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term, commandHandler, commandName) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           term.clear();
-          term.write(commandName);
+          _context.next = 3;
+          return (0,_commands_utils__WEBPACK_IMPORTED_MODULE_4__.emulateCommandWriting)(term, commandName);
+        case 3:
           term.writeln('');
           term.writeln('');
-          _context.next = 6;
-          return command(term);
-        case 6:
+          (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_2__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_3__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME]);
+          _context.next = 8;
+          return commandHandler(term);
+        case 8:
           term.writeln('');
-          (0,_cursor_utils__WEBPACK_IMPORTED_MODULE_1__.updateCursor)(term);
-          setTimeout(function () {
-            (0,_events_event_dispatcher__WEBPACK_IMPORTED_MODULE_3__.dispatchEvent)(_events_events_list__WEBPACK_IMPORTED_MODULE_4__.EVENTS[_events_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME]);
-            term.scrollToTop();
-            term.focus();
-            if (term.buffer._normal._buffer.ybase) {
-              (0,_tooltips_scrollable_tooltip__WEBPACK_IMPORTED_MODULE_2__.showScrollableToast)();
-            }
-          }, 0);
-        case 9:
+          _context.next = 11;
+          return (0,_cursor_utils__WEBPACK_IMPORTED_MODULE_1__.writeCursorWithWritingEmulation)(term);
+        case 11:
         case "end":
           return _context.stop();
       }
@@ -2920,6 +3133,9 @@ var convertCommandHandlerToEventHandler = /*#__PURE__*/function () {
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/async module */
@@ -3015,6 +3231,18 @@ var convertCommandHandlerToEventHandler = /*#__PURE__*/function () {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -3029,6 +3257,55 @@ var convertCommandHandlerToEventHandler = /*#__PURE__*/function () {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

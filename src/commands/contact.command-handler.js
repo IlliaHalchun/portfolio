@@ -1,20 +1,24 @@
 import { emulateCommandWriting } from '../utils/commands.utils';
 
-const CONTACT_MESSAGE = `\x1b[1;33mContact Me\x1b[1;36m
+const CONTACT_MESSAGE = `Contact Me
 
-\x1b[1;34mThank you for visiting my interactive portfolio!\x1b[0m
-\x1b[1;33mFeel free to reach out to me via the following methods:\x1b[0m
+Thank you for visiting my interactive portfolio!
 
-\x1b[1;32mEmail:\x1b[0m \x1b[1;37mgsv19782000@gmail.com\x1b[0m
-\x1b[1;32mPhone:\x1b[0m \x1b[1;37m+48574949097\x1b[0m
-\x1b[1;32mGitHub:\x1b[0m \x1b[1;37mhttps://github.com/illiahalchun\x1b[0m
-\x1b[1;32mLinkedIn:\x1b[0m \x1b[1;37mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1b[0m
+Feel free to reach out to me via the following methods:
 
-\x1b[1;33mLooking forward to connecting with you!\x1b[0m
+Email: gsv19782000@gmail.com
 
-\x1b[1;33mNeed Guidance?\x1b[0m
+Phone: +48574949097
 
-Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
+GitHub: \x1b[1m\x1b[48;2;255;170;42m\x1b[38;5;0mhttps://github.com/illiahalchun\x1b[0m
+
+LinkedIn: \x1b[1m\x1b[48;2;255;170;42m\x1b[38;5;0mhttps://www.linkedin.com/in/illia-halchun-7aa620254\x1b[0m
+
+Looking forward to connecting with you!
+
+Need Guidance?
+
+Type or click \x1b[1m\x1b[48;2;255;170;42m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands.`;
 
 export const contactCommandHandler = async (term) => {
     await emulateCommandWriting(term, CONTACT_MESSAGE);

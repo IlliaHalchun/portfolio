@@ -1,7 +1,9 @@
 const history = [];
-let currentIndex = 0;
+let currentIndex = -1;
 
 export const pushHistoryElement = (command) => {
+    if (command.trim() === '') return;
+
     history.push(command);
     currentIndex = history.length;
 };
@@ -11,17 +13,24 @@ export const returnHistoryIndexToStart = () => {
 };
 
 export const getPrevHistoryElement = () => {
-    if (currentIndex === 0) return '';
+    if (history.length === 0) return '';
 
-    currentIndex -= 1;
-    return history[currentIndex];
+    if (currentIndex > 0) {
+        currentIndex -= 1;
+        return history[currentIndex];
+    }
+
+    return history[0];
 };
 
 export const getNextHistoryElement = () => {
-    if (currentIndex === history.length) return '';
-
     if (history.length === 0) return '';
 
-    currentIndex += 1;
-    return history[currentIndex - 1];
+    if (currentIndex < history.length - 1) {
+        currentIndex += 1;
+        return history[currentIndex];
+    }
+
+    currentIndex = history.length;
+    return '';
 };

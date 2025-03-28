@@ -4,7 +4,6 @@ let prompt = '';
 
 export const addCharToThePrompt = (term, char) => {
     prompt += char;
-    term.write(char);
 };
 
 export const deleteCharFromThePrompt = (term) => {
@@ -17,14 +16,10 @@ export const deleteCharFromThePrompt = (term) => {
 };
 
 export const setPrompt = (term, value) => {
-    clearPrompt(term);
     prompt = value;
-    term.write(prompt);
 };
 
-export const clearPrompt = (term) => {
-    term.write('\x1b[2K\r');
-    term.write(`${CURSOR}`);
+export const clearPrompt = () => {
     prompt = '';
 };
 

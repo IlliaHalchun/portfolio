@@ -8,8 +8,9 @@ export const notyf = new Notyf({
         {
             type: 'info',
             icon: false,
-            dismissible: true,
+            dismissible: false,
             className: 'notyf-info',
+            ripple: false,
         },
     ],
 });

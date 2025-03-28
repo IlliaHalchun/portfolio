@@ -1,19 +1,26 @@
 .notyf {
-    font-family: monospace;
-    font-size: 14px;
+    font-family: 'IBM', monospace;
+    font-size: 22px;
+    z-index: 100;
+    filter: blur(1px);
 }
 
 .notyf .notyf-info {
-    background-color: #333333;
-    color: white;
+    background-color: #cec9b5;
+    color: black;
+}
+
+.notyf__wrapper {
+    padding-right: 0 !important;
 }
 
 .notyf .notyf__message button {
-    background: #a9b1d6;
+    font-size: inherit;
+    background: #ffaa2a;
     color: black;
     cursor: pointer;
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
     border: none;
     outline: none;
 }

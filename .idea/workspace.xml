@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21855924-da33-4361-bca0-15b2818cbc40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/bazel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/IBM.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/noise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sphereFilter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sphere_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/about.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/about.command-handler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/contact.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/contact.command-handler.js" afterDir="false" />
@@ -16,12 +24,23 @@
       <change beforePath="$PROJECT_DIR$/src/commands/projects.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/projects.command-handler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/skills.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/skills.command-handler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/events.handlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.handlers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/events.list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/events.names.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/events.names.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/event.dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/event.dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/events.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/events.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/notyf.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/notyf.module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/xterm.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/xterm.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/history.state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/history.state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/prompt.state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/prompt.state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/notyf.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/notyf.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/xterm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/xterm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tooltips/clear.tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tooltips/clear.tooltip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tooltips/scrollable.tooltip.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/commands.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/commands.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/cursor.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cursor.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/events.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/events.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +93,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\illia.halchun\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
@@ -100,6 +120,8 @@
       <workItem from="1742951228240" duration="2514000" />
       <workItem from="1742954522775" duration="2451000" />
       <workItem from="1743026866138" duration="3766000" />
+      <workItem from="1743092848966" duration="9942000" />
+      <workItem from="1743109446779" duration="14260000" />
     </task>
     <servers />
   </component>

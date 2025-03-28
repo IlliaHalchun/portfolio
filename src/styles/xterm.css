@@ -1,7 +1,11 @@
 #xterm-wrapper {
-    height: calc(80vh - 40px);
+    height: calc(100vh - 120px);
 }
 
 .xterm-viewport {
     overflow-y: hidden !important;
+}
+
+.xterm-rows {
+    filter: blur(1px);
 }

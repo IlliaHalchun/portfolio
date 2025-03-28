@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="SphereFilter" filterUnits="objectBoundingBox" x="-0.45"
+                y="-1.29" width="1.6" height="3.5">
+            <feImage id="mapa" result="Map" href="./sphere_map.png" />
+            <feDisplacementMap id="despMap" in="SourceGraphic" in2="Map" scale="100" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </defs>
+</svg>

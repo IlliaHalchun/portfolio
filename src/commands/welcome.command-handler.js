@@ -1,24 +1,25 @@
 import { emulateCommandWriting } from '../utils/commands.utils';
 
-const WELCOME_MESSAGE = `\x1b[1;33mWelcome to my interactive terminal portfolio!\x1b[1;36m
+const WELCOME_MESSAGE = `Welcome to my interactive terminal portfolio!
 
-\x1b[1;34mThis is a unique space where you can explore my work, experience, and skills through a terminal interface.\x1b[0m
+This is a unique space where you can explore my work, experience, and skills through a terminal interface.
 
-\x1b[1;33mAbout Me:\x1b[0m
+About Me:
 
 I am Illia Halchun, a full-stack software developer with expertise in modern web technologies.
+
 I specialize in building high-performance applications using:
 
-\x1b[1;32m• Next.js, Nest.js and Node.js
+• Next.js, Nest.js and Node.js
 • TypeScript and JavaScript
 • C# and .NET
-• React for front-end development\x1b[0m
+• React for front-end development
 
-\x1b[1;34mEnjoy your stay and have fun exploring my work!\x1b[0m
+Enjoy your stay and have fun exploring my work!
 
-\x1b[1;33mNeed Guidance?\x1b[0m
+Need Guidance?
 
-Type or click \x1b[1m\x1b[48;2;169;177;214m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands and start exploring.`;
+Type or click \x1b[1m\x1b[48;2;255;170;42m\x1b[38;5;0m[help]\x1b[0m to see the list of available commands and start exploring.`;
 
 export const welcomeCommandHandler = async (term, afterCommand) => {
     await emulateCommandWriting(term, WELCOME_MESSAGE, afterCommand);
