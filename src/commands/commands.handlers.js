@@ -1,6 +1,6 @@
 import {
     ABOUT_COMMAND_NAME,
-    CLEAR_COMMAND_NAME,
+    CLEAR_COMMAND_NAME, CONFIGS_COMMAND_NAME,
     CONTACT_COMMAND_NAME,
     EDUCATION_COMMAND_NAME,
     EXPERIENCE_COMMAND_NAME,
@@ -20,6 +20,7 @@ import { illiasayCommandHandler } from './illiasay.command-handler';
 import { welcomeCommandHandler } from './welcome.command-handler';
 import { clearCommandHandler } from './clear.command-handler';
 import { helpCommandHandler } from './help.command-handler';
+import configsCommandHandler from './configs.command';
 
 export const COMMAND_HANDLERS = {
     [HELP_COMMAND_NAME]: helpCommandHandler,
@@ -32,4 +33,5 @@ export const COMMAND_HANDLERS = {
     [EXPERIENCE_COMMAND_NAME]: experienceCommandHandler,
     [EDUCATION_COMMAND_NAME]: educationCommandHandler,
     [PROJECTS_COMMAND_NAME]: projectsCommandHandler,
+    [CONFIGS_COMMAND_NAME]: configsCommandHandler
 };
