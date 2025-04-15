@@ -8,3 +8,4 @@ export const ILLIASAY_COMMAND_NAME = 'illiasay';
 export const PROJECTS_COMMAND_NAME = 'projects';
 export const SKILLS_COMMAND_NAME = 'skills';
 export const WELCOME_COMMAND_NAME = 'welcome';
+export const CONFIGS_COMMAND_NAME = 'configs';

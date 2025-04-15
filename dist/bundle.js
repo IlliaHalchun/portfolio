@@ -1810,6 +1810,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ABOUT_COMMAND_DESCRIPTION: () => (/* binding */ ABOUT_COMMAND_DESCRIPTION),
 /* harmony export */   CLEAR_COMMAND_DESCRIPTION: () => (/* binding */ CLEAR_COMMAND_DESCRIPTION),
+/* harmony export */   CONFIGS_COMMAND_DESCRIPTION: () => (/* binding */ CONFIGS_COMMAND_DESCRIPTION),
 /* harmony export */   CONTACT_COMMAND_DESCRIPTION: () => (/* binding */ CONTACT_COMMAND_DESCRIPTION),
 /* harmony export */   EDUCATION_COMMAND_DESCRIPTION: () => (/* binding */ EDUCATION_COMMAND_DESCRIPTION),
 /* harmony export */   EXPERIENCE_COMMAND_DESCRIPTION: () => (/* binding */ EXPERIENCE_COMMAND_DESCRIPTION),
@@ -1819,6 +1820,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   SKILLS_COMMAND_DESCRIPTION: () => (/* binding */ SKILLS_COMMAND_DESCRIPTION),
 /* harmony export */   WELCOME_COMMAND_DESCRIPTION: () => (/* binding */ WELCOME_COMMAND_DESCRIPTION)
 /* harmony export */ });
+/* harmony import */ var _commands_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands.names */ "./src/commands/commands.names.js");
+
 var ABOUT_COMMAND_DESCRIPTION = 'Displays information about me';
 var CLEAR_COMMAND_DESCRIPTION = 'Clears terminal';
 var CONTACT_COMMAND_DESCRIPTION = 'Displays contact information';
@@ -1829,6 +1832,7 @@ var ILLIASAY_COMMAND_DESCRIPTION = 'Displays an ASCII portrait of me with a spee
 var PROJECTS_COMMAND_DESCRIPTION = 'Displays my featured projects';
 var SKILLS_COMMAND_DESCRIPTION = 'Displays my technical skills';
 var WELCOME_COMMAND_DESCRIPTION = 'Displays welcome message';
+var CONFIGS_COMMAND_DESCRIPTION = 'Displays my configuration files' + ' source';
 
 /***/ }),
 
@@ -1946,6 +1950,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _welcome_command_handler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./welcome.command-handler */ "./src/commands/welcome.command-handler.js");
 /* harmony import */ var _clear_command_handler__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./clear.command-handler */ "./src/commands/clear.command-handler.js");
 /* harmony import */ var _help_command_handler__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./help.command-handler */ "./src/commands/help.command-handler.js");
+/* harmony import */ var _configs_command__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./configs.command */ "./src/commands/configs.command.js");
+var _COMMAND_HANDLERS;
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
@@ -1961,7 +1967,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 
 
-var COMMAND_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _commands_names__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_NAME, _help_command_handler__WEBPACK_IMPORTED_MODULE_10__.helpCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_NAME, _clear_command_handler__WEBPACK_IMPORTED_MODULE_9__.clearCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_NAME, _welcome_command_handler__WEBPACK_IMPORTED_MODULE_8__.welcomeCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ILLIASAY_COMMAND_NAME, _illiasay_command_handler__WEBPACK_IMPORTED_MODULE_7__.illiasayCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_NAME, _contact_command_handler__WEBPACK_IMPORTED_MODULE_6__.contactCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_NAME, _about_command_handler__WEBPACK_IMPORTED_MODULE_5__.aboutCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_NAME, _skills_command_handler__WEBPACK_IMPORTED_MODULE_4__.skillsCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_NAME, _experience_command_handler__WEBPACK_IMPORTED_MODULE_3__.experienceCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_NAME, _education_command_handler__WEBPACK_IMPORTED_MODULE_2__.educationCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_NAME, _projects_command_handler__WEBPACK_IMPORTED_MODULE_1__.projectsCommandHandler);
+
+var COMMAND_HANDLERS = (_COMMAND_HANDLERS = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_COMMAND_HANDLERS, _commands_names__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_NAME, _help_command_handler__WEBPACK_IMPORTED_MODULE_10__.helpCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_NAME, _clear_command_handler__WEBPACK_IMPORTED_MODULE_9__.clearCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_NAME, _welcome_command_handler__WEBPACK_IMPORTED_MODULE_8__.welcomeCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ILLIASAY_COMMAND_NAME, _illiasay_command_handler__WEBPACK_IMPORTED_MODULE_7__.illiasayCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_NAME, _contact_command_handler__WEBPACK_IMPORTED_MODULE_6__.contactCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_NAME, _about_command_handler__WEBPACK_IMPORTED_MODULE_5__.aboutCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_NAME, _skills_command_handler__WEBPACK_IMPORTED_MODULE_4__.skillsCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_NAME, _experience_command_handler__WEBPACK_IMPORTED_MODULE_3__.experienceCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_NAME, _education_command_handler__WEBPACK_IMPORTED_MODULE_2__.educationCommandHandler), _commands_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_NAME, _projects_command_handler__WEBPACK_IMPORTED_MODULE_1__.projectsCommandHandler), _defineProperty(_COMMAND_HANDLERS, _commands_names__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_COMMAND_NAME, _configs_command__WEBPACK_IMPORTED_MODULE_11__["default"]));
 
 /***/ }),
 
@@ -1976,6 +1983,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ABOUT_COMMAND_NAME: () => (/* binding */ ABOUT_COMMAND_NAME),
 /* harmony export */   CLEAR_COMMAND_NAME: () => (/* binding */ CLEAR_COMMAND_NAME),
+/* harmony export */   CONFIGS_COMMAND_NAME: () => (/* binding */ CONFIGS_COMMAND_NAME),
 /* harmony export */   CONTACT_COMMAND_NAME: () => (/* binding */ CONTACT_COMMAND_NAME),
 /* harmony export */   EDUCATION_COMMAND_NAME: () => (/* binding */ EDUCATION_COMMAND_NAME),
 /* harmony export */   EXPERIENCE_COMMAND_NAME: () => (/* binding */ EXPERIENCE_COMMAND_NAME),
@@ -1995,6 +2003,87 @@ var ILLIASAY_COMMAND_NAME = 'illiasay';
 var PROJECTS_COMMAND_NAME = 'projects';
 var SKILLS_COMMAND_NAME = 'skills';
 var WELCOME_COMMAND_NAME = 'welcome';
+var CONFIGS_COMMAND_NAME = 'configs';
+
+/***/ }),
+
+/***/ "./src/commands/configs.command.js":
+/*!*****************************************!*\
+  !*** ./src/commands/configs.command.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   configsCommandHandler: () => (/* binding */ configsCommandHandler),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/commands.utils */ "./src/utils/commands.utils.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+
+var CONFIGS_REPO_API_URL = "https://api.github.com/repos/IlliaHalchun/configs/contents";
+var CONFIGS_REPO_URL = "https://github.com/IlliaHalchun/configs";
+var TECHNOLOGY_DESCRIPTIONS = {
+  "i3": "tiling window manager designed for X11, inspired by wmii and written in C",
+  "ideavim": "vim emulation plugin for IDEs based on the IntelliJ platform",
+  "kitty": "fast, feature-rich, GPU-based terminal emulator",
+  "nvim": "extensible Vim-based text editor",
+  "ranger": "console file manager with VI key bindings"
+};
+var configsCommandHandler = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
+    var response, data, directories, configsList, message;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.prev = 0;
+          _context.next = 3;
+          return fetch(CONFIGS_REPO_API_URL);
+        case 3:
+          response = _context.sent;
+          if (response.ok) {
+            _context.next = 6;
+            break;
+          }
+          throw new Error("Failed to fetch repository contents");
+        case 6:
+          _context.next = 8;
+          return response.json();
+        case 8:
+          data = _context.sent;
+          directories = data.filter(function (item) {
+            return item.type === "dir";
+          });
+          configsList = directories.map(function (folder) {
+            var techDescription = TECHNOLOGY_DESCRIPTIONS[folder.name] || "No description available.";
+            return "\u2022 ".concat(folder.name, " - ").concat(techDescription);
+          }).join("\n\r");
+          message = "You can find configs in the repository here:  \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m".concat(CONFIGS_REPO_URL, "\x1B[0m\n        \nThe repository includes configurations for the following technologies:\n\n").concat(configsList, "\n        \nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.");
+          _context.next = 14;
+          return (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__.emulateCommandWriting)(term, message);
+        case 14:
+          _context.next = 20;
+          break;
+        case 16:
+          _context.prev = 16;
+          _context.t0 = _context["catch"](0);
+          _context.next = 20;
+          return (0,_utils_commands_utils__WEBPACK_IMPORTED_MODULE_0__.emulateCommandWriting)(term, "Error: ".concat(_context.t0.message));
+        case 20:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee, null, [[0, 16]]);
+  }));
+  return function configsCommandHandler(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (configsCommandHandler);
 
 /***/ }),
 
@@ -2131,7 +2220,7 @@ function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
 
-var HELP_MESSAGE = "Help Menu\n\nHere\u2019s a list of available commands to navigate this terminal portfolio.\n\n\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[welcome]\x1B[0m    - ".concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_DESCRIPTION, "\n\nclear        - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m       - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[projects]\x1B[0m   - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[about]\x1B[0m      - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[skills]\x1B[0m     - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[experience]\x1B[0m - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[education]\x1B[0m  - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[contact]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_DESCRIPTION, "\n\nType or click a command to begin exploring.");
+var HELP_MESSAGE = "Help Menu\n\nHere\u2019s a list of available commands to navigate this terminal portfolio.\n\n\u250C\u2500 General Commands \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[welcome]\x1B[0m    - ".concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_DESCRIPTION, "\n\nclear        - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CLEAR_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m       - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.HELP_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Portfolio Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[projects]\x1B[0m   - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[about]\x1B[0m      - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.ABOUT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[skills]\x1B[0m     - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[experience]\x1B[0m - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[education]\x1B[0m  - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_COMMAND_DESCRIPTION, "\n\n\u250C\u2500 Additional Information \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[contact]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONTACT_COMMAND_DESCRIPTION, "\n\n\x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[configs]\x1B[0m    - ").concat(_commands_descriptions__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_COMMAND_DESCRIPTION, "\n\nType or click a command to begin exploring.");
 var helpCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2253,7 +2342,7 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-var PROJECTS_MESSAGE = "Projects Showcase\n\n1. Tarcza dla Ukrainy - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://tarczadlaukrainy.pl\x1B[0m\n\n   Social Help Project - Supports Ukrainian soldiers and civilians affected by war.\n   \n   Tech Stack:\n   \n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n2. Artist Portfolio - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://anastasiia-tereshchenko.art\x1B[0m\n\n   Custom Admin & Art Showcase - A digital portfolio for an artist to showcase and manage paintings.\n   \n   Tech Stack:\n   \n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
+var PROJECTS_MESSAGE = "Projects Showcase\n\n1. Tarcza dla Ukrainy - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://tarczadlaukrainy.pl\x1B[0m\n\n   Social Help Project - Supports Ukrainian soldiers and civilians affected by war.\n   \n   Tech Stack:\n   \n   \u2022 Strapi CMS for content management\n   \u2022 Next.js for better SEO optimizations\n   \u2022 Nginx & Certbot for deployment and SSL\n\n2. Artist Portfolio - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://anastasiia-tereshchenko.art\x1B[0m\n\n   Custom Admin & Art Showcase - A digital portfolio for an artist to showcase and manage paintings.\n   \n   Tech Stack:\n   \n   \u2022 Custom-built admin panel for managing messages & artwork\n   \u2022 Next.js for a fast, interactive UI\n   \u2022 Nginx & Certbot for secure deployment\n\n3. Life Game CLI - \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0mhttps://github.com/IlliaHalchun/life-game-cli\x1B[0m\n\n   Terminal-Based Game - A beautiful CLI implementation of Conway's Game of Life.\n   \n   Tech Stack:\n   \n   \u2022 TypeScript for robust type-safe development\n   \u2022 Node.js for CLI execution\n   \u2022 High-performance rendering loop with keyboard controls\n\nNeed Guidance?\n\nType or click \x1B[1m\x1B[48;2;255;170;42m\x1B[38;5;0m[help]\x1B[0m to see the list of available commands.";
 var projectsCommandHandler = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(term) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -2412,6 +2501,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_notyf_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/notyf.module */ "./src/modules/notyf.module.js");
 /* harmony import */ var _utils_events_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/events.utils */ "./src/utils/events.utils.js");
 /* harmony import */ var _commands_commands_names__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../commands/commands.names */ "./src/commands/commands.names.js");
+/* harmony import */ var _commands_configs_command__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../commands/configs.command */ "./src/commands/configs.command.js");
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__]);
 _modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -2432,7 +2522,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 
 
-var EVENT_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, function () {
+
+var EVENT_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, function () {
   return (0,_close_all_toasts_event_handler__WEBPACK_IMPORTED_MODULE_1__.closeAllToastsEventHandler)(_modules_notyf_module__WEBPACK_IMPORTED_MODULE_11__.notyf);
 }), _events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME, function () {
   return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_12__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__.term, _commands_about_command_handler__WEBPACK_IMPORTED_MODULE_2__.aboutCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_13__.ABOUT_COMMAND_NAME);
@@ -2450,6 +2541,8 @@ var EVENT_HANDLERS = _defineProperty(_defineProperty(_defineProperty(_defineProp
   return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_12__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__.term, _commands_skills_command_handler__WEBPACK_IMPORTED_MODULE_8__.skillsCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_13__.SKILLS_COMMAND_NAME);
 }), _events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME, function () {
   return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_12__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__.term, _commands_welcome_command_handler__WEBPACK_IMPORTED_MODULE_9__.welcomeCommandHandler, _commands_commands_names__WEBPACK_IMPORTED_MODULE_13__.WELCOME_COMMAND_NAME);
+}), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_EVENT_NAME, function () {
+  return (0,_utils_events_utils__WEBPACK_IMPORTED_MODULE_12__.convertCommandHandlerToEventHandler)(_modules_xterm_module__WEBPACK_IMPORTED_MODULE_10__.term, _commands_configs_command__WEBPACK_IMPORTED_MODULE_14__["default"], _commands_commands_names__WEBPACK_IMPORTED_MODULE_13__.CONFIGS_COMMAND_NAME);
 });
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
@@ -2473,7 +2566,7 @@ function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
-var EVENTS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME));
+var EVENTS = _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, _events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CLOSE_ALL_TOASTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.ABOUT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CONTACT_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EDUCATION_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.EXPERIENCE_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.HELP_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_EVENT_NAME)), _events_names__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_EVENT_NAME, new Event(_events_names__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_EVENT_NAME));
 
 /***/ }),
 
@@ -2488,6 +2581,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ABOUT_EVENT_NAME: () => (/* binding */ ABOUT_EVENT_NAME),
 /* harmony export */   CLOSE_ALL_TOASTS_EVENT_NAME: () => (/* binding */ CLOSE_ALL_TOASTS_EVENT_NAME),
+/* harmony export */   CONFIGS_EVENT_NAME: () => (/* binding */ CONFIGS_EVENT_NAME),
 /* harmony export */   CONTACT_EVENT_NAME: () => (/* binding */ CONTACT_EVENT_NAME),
 /* harmony export */   EDUCATION_EVENT_NAME: () => (/* binding */ EDUCATION_EVENT_NAME),
 /* harmony export */   EVENT_NAME_SUFFIX: () => (/* binding */ EVENT_NAME_SUFFIX),
@@ -2509,6 +2603,7 @@ var HELP_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.HELP
 var PROJECTS_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.PROJECTS_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
 var SKILLS_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.SKILLS_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
 var WELCOME_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.WELCOME_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
+var CONFIGS_EVENT_NAME = _commands_commands_names__WEBPACK_IMPORTED_MODULE_0__.CONFIGS_COMMAND_NAME + "-".concat(EVENT_NAME_SUFFIX);
 
 /***/ }),
 
@@ -2536,6 +2631,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mod
 // Styles
 
 
+var wrapper = document.querySelector(".xterm-wrapper");
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
 

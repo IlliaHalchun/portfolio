@@ -1,7 +1,7 @@
 import {
     ABOUT_EVENT_NAME,
     CLEAR_EVENT_NAME,
-    CLOSE_ALL_TOASTS_EVENT_NAME,
+    CLOSE_ALL_TOASTS_EVENT_NAME, CONFIGS_EVENT_NAME,
     CONTACT_EVENT_NAME,
     EDUCATION_EVENT_NAME,
     EXPERIENCE_EVENT_NAME,
@@ -24,7 +24,7 @@ import { notyf } from '../modules/notyf.module';
 import { convertCommandHandlerToEventHandler } from '../utils/events.utils';
 import {
     ABOUT_COMMAND_NAME,
-    CLEAR_COMMAND_NAME,
+    CLEAR_COMMAND_NAME, CONFIGS_COMMAND_NAME,
     CONTACT_COMMAND_NAME,
     EDUCATION_COMMAND_NAME,
     EXPERIENCE_COMMAND_NAME,
@@ -33,6 +33,7 @@ import {
     SKILLS_COMMAND_NAME,
     WELCOME_COMMAND_NAME,
 } from '../commands/commands.names';
+import configsCommandHandler from '../commands/configs.command';
 
 export const EVENT_HANDLERS = {
     [CLOSE_ALL_TOASTS_EVENT_NAME]: () => closeAllToastsEventHandler(notyf),
@@ -84,4 +85,5 @@ export const EVENT_HANDLERS = {
             welcomeCommandHandler,
             WELCOME_COMMAND_NAME
         ),
+    [CONFIGS_EVENT_NAME]: () => convertCommandHandlerToEventHandler(term,configsCommandHandler, CONFIGS_COMMAND_NAME)
 };

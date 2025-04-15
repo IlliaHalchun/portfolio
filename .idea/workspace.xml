@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21855924-da33-4361-bca0-15b2818cbc40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/bazel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/IBM.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/noise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/sphereFilter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/sphere_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/about.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/about.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/commands.dispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/contact.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/contact.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/education.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/education.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/experience.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/experience.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/help.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/illiasay.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/illiasay.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/projects.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/projects.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/skills.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/skills.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/welcome.command-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/event.dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/event.dispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/events.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/events.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/notyf.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/notyf.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/xterm.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/xterm.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/history.state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/history.state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/prompt.state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/prompt.state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/notyf.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/notyf.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/xterm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/xterm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tooltips/clear.tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tooltips/clear.tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tooltips/scrollable.tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/commands.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/commands.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/cursor.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cursor.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/events.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/events.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="21855924-da33-4361-bca0-15b2818cbc40" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,7 +29,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/IlliaHalchun/portfolio.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:IlliaHalchun/portfolio.git&quot;,
     &quot;accountId&quot;: &quot;67faf961-ae1e-4315-8a9f-d9cece3d0d90&quot;
   }
 }</component>
@@ -93,7 +56,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\illia.halchun\\AppData\\Local\\Programs\\Rider\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
@@ -122,7 +85,21 @@
       <workItem from="1743026866138" duration="3766000" />
       <workItem from="1743092848966" duration="9942000" />
       <workItem from="1743109446779" duration="14260000" />
+      <workItem from="1743170494478" duration="679000" />
+      <workItem from="1743191027489" duration="1728000" />
+      <workItem from="1743200329311" duration="3191000" />
+      <workItem from="1744749111391" duration="522000" />
+      <workItem from="1745795945658" duration="664000" />
     </task>
+    <task id="LOCAL-00001" summary="modifications">
+      <option name="closed" value="true" />
+      <created>1745797309976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745797309976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,5 +109,25 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifications" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,3 +1,5 @@
+import { CONFIGS_COMMAND_NAME } from './commands.names';
+
 export const ABOUT_COMMAND_DESCRIPTION = 'Displays information about me';
 export const CLEAR_COMMAND_DESCRIPTION = 'Clears terminal';
 export const CONTACT_COMMAND_DESCRIPTION = 'Displays contact information';
@@ -9,3 +11,5 @@ export const ILLIASAY_COMMAND_DESCRIPTION =
 export const PROJECTS_COMMAND_DESCRIPTION = 'Displays my featured projects';
 export const SKILLS_COMMAND_DESCRIPTION = 'Displays my technical skills';
 export const WELCOME_COMMAND_DESCRIPTION = 'Displays welcome message';
+export const CONFIGS_COMMAND_DESCRIPTION = 'Displays my configuration files' +
+    ' source';
